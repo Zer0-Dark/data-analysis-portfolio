@@ -5,3 +5,17 @@
   --color-brand: #8750f7;
   --color-brand-semi-dark: #140c1c;
 }
+
+body {
+  background-image: url("/dot.svg");
+  background-position: 0 0;
+  background-size: 90px;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-image: url("/dot.svg");
+  background-position: 0 0;
+  background-size: 90px;
+  background-attachment: fixed;
+}

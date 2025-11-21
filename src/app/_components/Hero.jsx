@@ -38,7 +38,7 @@ function Hero() {
     }, [])
 
     return (
-        <div className='flex  w-full h-screen relative'>
+        <div className='flex  w-full h-screen relative border-b-1 border-b-brand'>
             <div className='w-2/3 h-full absolute top-0 left-0' ref={vantaRef}>
             </div>
             <div className='w-full h-full absolute top-0 left-0 z-10 bg-brand-dark opacity-30'>
