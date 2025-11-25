@@ -28,5 +28,10 @@
         "id": 6,
         "title": "hello this is Project title",
         "para": "this project is about testing some features online so idk what to do rn"
+    },
+    {
+        "id": 7,
+        "title": "دا تجربة لمحمود",
+        "para": "حاجات عن المشروع"
     }
 ]
