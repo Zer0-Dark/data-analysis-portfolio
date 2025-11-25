@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "icon": "phone",
+    "label": "+201278113299",
+    "href": "tel:+201278113299"
+  },
+  {
+    "id": 2,
+    "icon": "email",
+    "label": "test11.test@gmail.com",
+    "href": "mailto:test11.test@gmail.com"
+  },
+  {
+    "id": 3,
+    "icon": "facebook",
+    "label": "Facebook",
+    "href": "https://facebook.com"
+  },
+  {
+    "id": 4,
+    "icon": "linkedin",
+    "label": "Linkedin",
+    "href": "https://linkedin.com"
+  },
+  {
+    "id": 5,
+    "icon": "github",
+    "label": "Github",
+    "href": "https://github.com"
+  }
+]

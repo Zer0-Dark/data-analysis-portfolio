@@ -10,7 +10,7 @@ function SectionTitle({ title }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-7xl font-extrabold uppercase tracking-wider leading-none mb-6 inline-flex gap-4"
+                className="lg:text-7xl text-6xl font-extrabold uppercase tracking-wider leading-none mb-6 inline-flex gap-4"
                 style={{
                     background: "linear-gradient(to right, #8750F7 0%, #FFFFFF 100%)",
                     WebkitBackgroundClip: "text",
@@ -25,7 +25,7 @@ function SectionTitle({ title }) {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="w-[650px] text-center"
+                className="lg:w-[650px] text-center"
             >
                 We put your ideas and thus your wishes in the form of a unique web
                 project that inspires you and you customers.

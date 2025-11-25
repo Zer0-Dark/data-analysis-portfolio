@@ -67,7 +67,7 @@ function Project({ title, para, img }) {
                 ref={containerRef}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="w-[calc(50%_-_15px)] p-4"
+                className="lg:w-[calc(50%_-_15px)] p-4"
                 style={{ perspective: "2000px" }}
             >
                 <motion.div

@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle"
 
 function Certifcates() {
     return (
-        <div className="px-42 ">
+        <div className="lg:px-42 px-8 ">
             <SectionTitle title="Certificates" />
             <div className="flex flex-wrap  gap-6">
                 <Certifcate />

@@ -38,8 +38,8 @@ function Hero() {
     }, [])
 
     return (
-        <div className='flex  w-full h-screen relative border-b-1 border-b-brand'>
-            <div className='w-2/3 h-full absolute top-0 left-0' ref={vantaRef}>
+        <div className='flex lg:flex-row flex-col flex-wrap  w-full lg:h-screen h-fit relative border-b-1 border-b-brand'>
+            <div className='lg:w-2/3 w-full h-full absolute top-0 left-0' ref={vantaRef}>
             </div>
             <div className='w-full h-full absolute top-0 left-0 z-10 bg-brand-dark opacity-30'>
 
@@ -70,7 +70,7 @@ function Hero() {
 
                 </div>
             </div>
-            <div className='bg-dark-brand w-1/3 h-full relative border-brand  border-l-2   '>
+            <div className='bg-dark-brand lg:w-1/3 w-full lg:h-full relative border-brand  border-l-2   '>
                 <Image fill={true} className='object-cover max-w-full max-h-full ' src="/pexels-ash-valiente-1680519-3533228.jpg" alt="Professional portrait" />
 
             </div>
