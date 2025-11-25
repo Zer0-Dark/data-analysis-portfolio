@@ -5,7 +5,7 @@ function Skills() {
     return (
         <div className=" px-42 mt-12 mb-12">
             <SectionTitle title="my skills" />
-            <div className="flex justify-between ">
+            <div className="flex flex-wrap justify-between ">
                 <Skill skillName="Excel" skillIcon={"/excel.png"} />
                 <Skill skillName="Power Bi" skillIcon={"/power_bi.svg"} />
                 <Skill skillName="Tableau" skillIcon={"/tablu.png"} />
