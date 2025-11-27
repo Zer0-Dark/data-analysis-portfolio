@@ -2,6 +2,7 @@ import { FaFacebook, FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope } from 'react-
 import SectionTitle from './SectionTitle'
 import Image from 'next/image';
 import contactData from '../_data/contactData.json';
+import sections from '../_data/sections.json';
 
 const iconMap = {
     phone: FaPhoneAlt,
@@ -14,7 +15,10 @@ const iconMap = {
 function Contact() {
     return (
         <div className='lg:px-42 px-8 '>
-            <SectionTitle title="Contact Me" />
+            <SectionTitle title={sections.contact.title} />
+            {sections.contact.intro && (
+                <p className="w-[650px] text-center mb-6">{sections.contact.intro}</p>
+            )}
 
             {/* <div className='w-1/2 '>
                     <Image alt='cv' src={'/cv.png'} width={1200} height={900} className='w-3/4 border-5 rounded-xl border-brand'></Image>

@@ -1,0 +1,45 @@
+{
+    "hero": {
+        "name": "Mahmoud Mohamed El-Zayat",
+        "role": "Data Analyst",
+        "description": "Detail-oriented Data Analyst with a strong background in business and accounting, combined with hands-on experience in data analysis tools and real-world projects.",
+        "cvLink": "/cv.pdf"
+    },
+    "skills": {
+        "title": "My Skills",
+        "items": [
+            {
+                "name": "Excel",
+                "icon": "/excel.png"
+            },
+            {
+                "name": "Power Bi",
+                "icon": "/power_bi.svg"
+            },
+            {
+                "name": "Tableau",
+                "icon": "/tablu.png"
+            },
+            {
+                "name": "Python",
+                "icon": "/python.png"
+            },
+            {
+                "name": "SQL",
+                "icon": "/sql.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "intro": "We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers."
+    },
+    "certificates": {
+        "title": "Certificates",
+        "intro": "Selected professional certificates and training."
+    },
+    "contact": {
+        "title": "Contact Me",
+        "intro": "Get in touch via phone, email, or social networks."
+    }
+}

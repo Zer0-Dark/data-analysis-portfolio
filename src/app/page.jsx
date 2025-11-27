@@ -13,8 +13,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white">
-      <Loader />
-      {/* <Hero></Hero> */}
+      {/* <Loader /> */}
+      <Hero></Hero>
       <Skills></Skills>
       <Certifcates />
       <Projects></Projects>

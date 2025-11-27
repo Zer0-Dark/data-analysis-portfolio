@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Data Analysis Certificate",
+        "info": "Completed Data Analysis professional course, covering Excel, SQL, and Python.",
+        "img": "https://i.postimg.cc/C54tVRyW/Screenshot-2025-11-27-035355.png"
+    },
+    {
+        "id": 2,
+        "title": "Power BI Certification",
+        "info": "Hands-on Power BI training with dashboarding and DAX.",
+        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tableau Specialist",
+        "info": "Visual analytics and storytelling with Tableau.",
+        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Python for Data Science",
+        "info": "Applied Python for data manipulation, cleaning, and analysis.",
+        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
+    }
+]

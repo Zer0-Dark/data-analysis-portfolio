@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
 import Image from 'next/image'
+import sections from '../_data/sections.json'
 
 function Hero() {
     const vantaRef = useRef(null)
@@ -45,15 +46,15 @@ function Hero() {
 
             </div>
             <div className=' z-20  w-2/3 flex flex-col justify-center px-42'>
-                <h1 className='text-6xl font-bold'>Mahmoud Mohamed El-Zayat</h1>
-                <h2 className='text-4xl mt-8 font-semibold text-brand'>Data Analyst</h2>
+                <h1 className='text-6xl font-bold'>{sections.hero.name}</h1>
+                <h2 className='text-4xl mt-8 font-semibold text-brand'>{sections.hero.role}</h2>
                 <p className=' pr-48 mt-8'>
-                    Detail-oriented Data Analyst with a strong background in business and accounting, combined with hands-on experience in data analysis tools and real-world projects.
+                    {sections.hero.description}
                 </p>
                 <div className='flex  items-center gap-6 mt-12'>
-                    <button className=' cursor-pointer px-6 py-3 border-brand border-2 rounded-2xl text-white text-xl font-bold hover:bg-brand '>
+                    <a href={sections.hero.cvLink} className=' cursor-pointer inline-block px-6 py-3 border-brand border-2 rounded-2xl text-white text-xl font-bold hover:bg-brand '>
                         Download CV
-                    </button>
+                    </a>
                     <div className='flex gap-6 text-4xl [&>*]:hover:text-brand [&>*]:cursor-pointer  '>
                         <a>
                             <FaFacebook />
