@@ -50,17 +50,110 @@
      {
         "id": 9,
         "title": "Google Data Analytics Professional Certificate",
-        "info": "A comprehensive certification demonstrating proficiency in the complete Google Data Analytics curriculum and workflow..",
+        "info": "A comprehensive certification demonstrating proficiency in the complete Google Data Analytics curriculum and workflow.",
         "img": "https://i.postimg.cc/L8bHGxyD/Coursera-TET9UHWVGL6B.png"
     },
      {
-        "id": 3,
+        "id": 10,
+        "title": "Introduction to Data Analytics",
+        "info": "An introductory IBM course covering the fundamentals of data analytics, key roles in the field, and the data analysis process.",
+        "img": "https://i.postimg.cc/J0yPn4NK/Coursera-O2M6V9Q1YUCA.png"
+    },
+     {
+        "id": 11,
+        "title": "Excel Basics for Data Analysis",
+        "info": "Focuses on using Excel for data cleaning, organizing, and performing basic analytical operations essential for data work.",
+        "img": "https://i.postimg.cc/4358204W/Coursera-KL1QVTMMRH9O.png"
+    },
+      {
+        "id": 12,
+        "title": "Data Visualization and Dashboards with Excel and Cognos",
+        "info": "Covers designing visualizations in Excel and creating interactive dashboards using IBM Cognos Analytics.",
+        "img": "https://i.postimg.cc/QCB0txQ6/Coursera-YVB77I3PQXJ5.png"
+    },
+      {
+        "id": 13,
+        "title": "Python for Data Science, AI & Development",
+        "info": "Introduces Python programming fundamentals and essential libraries used in data science, AI, and automation.",
+        "img": "https://i.postimg.cc/cJmDkz1h/Coursera-2R0GF3U7JFG7.png"
+    },
+      {
+        "id": 14,
+        "title": "Python Project for Data Science",
+        "info": "A practical Python project applying data manipulation, analysis, and visualization skills in a real-world scenario.",
+        "img": "https://i.postimg.cc/5yHn0NBg/Coursera-NMY4TFSDP00L.png"
+    },
+      {
+        "id": 15,
+        "title": "Data Analysis with Python",
+        "info": "Focuses on using Python to explore datasets, perform statistical analysis, and uncover insights using pandas, NumPy, and other libraries.",
+        "img": "https://i.postimg.cc/bJVmp2tQ/Coursera-MBNN9IFVQZH2.png"
+    },
+      {
+        "id": 16,
+        "title": "Data Visualization with Python",
+        "info": "Covers building visualizations using Python libraries such as Matplotlib, Seaborn, and Folium to communicate analytical findings.",
+        "img": "https://i.postimg.cc/rpJhZHyg/Coursera-7XHPQB2HBRF6.png"
+    },
+      {
+        "id": 17,
+        "title": "Generative AI: Enhance Your Data Analytics Career",
+        "info": "Explores how generative AI supports data analysis workflows and enhances problem-solving and productivity in analytics tasks.",
+        "img": "https://i.postimg.cc/g0DMt7ct/Coursera-DX2WTLAU7ZXM.png"
+    },
+      {
+        "id": 18,
+        "title": "Power BI & Data Analysis Professional Certificate — AMIT",
+        "info": "A 96-hour accredited program by AMIT, recognized by the Engineers Syndicate, Applied Arts Syndicate, Ministry of Foreign Affairs, and ISO-certified.
+                The program covers Excel analytics, SQL, Python for data analysis, ETL processes, Power BI data modeling, dashboard design, and Tableau fundamentals.",
+        "img": "https://i.postimg.cc/Wb9TxsSF/Power-Bi-Data-Analysis-Mahmoud-Mohamed-Fawzy-Elzayat.png"
+    },
+      {
+        "id": 19,
+        "title": "Data Analysis Professional Certificate — AMIT",
+        "info": "An 85-hour accredited Data Analysis program delivered by AMIT and certified by the Syndicate of Applicators.
+                This professional training covers core analytics skills including Excel data processing, data cleaning workflows, database fundamentals, Power Query ETL, foundational SQL, Python for data handling, and essentials of business reporting.
+                The program also develops strong capabilities in data modeling, KPI creation, dashboard building, and practical analytical thinking using modern data tools.",
+        "img": "https://i.postimg.cc/FRWX8ZgG/Whats-App-Image-2025-11-30-at-12-49-14-7e268e69.jpg"
+    },
+      {
+        "id": 20,
+        "title": "Data Analytics Essentials Certificate — Cisco Networking Academy",
+        "info": "A foundational, skills-based program by Cisco Networking Academy covering the core concepts of the data analytics lifecycle. The course develops essential analytical thinking and hands-on capabilities in data preparation, transformation, and visualization. Learners gain proficiency in understanding data types and formats, applying analytics tools, performing statistical analysis, and building practical projects using Excel, SQL, and Tableau.",
+        "img": "https://i.postimg.cc/W4Z7Qbm2/Data-Analytics-Essentials-Badge20250104-28-ykqtg2.png"
+    },
+      {
+        "id": 21,
         "title": "Prepare Data for Exploration",
         "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
         "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
     },
-     {
-        "id": 3,
+      {
+        "id": 22,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
+      {
+        "id": 23,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
+      {
+        "id": 24,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
+      {
+        "id": 25,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
+      {
+        "id": 26,
         "title": "Prepare Data for Exploration",
         "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
         "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
