@@ -12,7 +12,7 @@ function Certifcates() {
     return (
         <div className="lg:px-42 px-8 ">
             <SectionTitle title={sections.certificates.title} />
-            <div className="flex flex-wrap gap-6 ">
+            <div className="flex flex-wrap gap-6 justify-center items-center ">
                 {certificatesData.map((c) => (
                     <Certifcate
                         key={c.id}

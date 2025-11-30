@@ -19,7 +19,7 @@ function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg',
                 onMouseEnter={() => setHoveredId(id)}
                 onMouseLeave={() => setHoveredId(null)}
                 onClick={() => setIsOpen(true)}
-                className="w-[500px] relative group border-1 rounded-md p-0.5 border-purple-950 cursor-pointer">
+                className="w-[500px]  relative group border-1 rounded-md p-1 border-purple-950 cursor-pointer">
                 <Image
                     width={1920}
                     height={1080}
@@ -51,17 +51,17 @@ function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg',
                             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                             onClick={(e) => e.stopPropagation()}
                             className="relative">
-                            <button
+                            {/* <button
                                 onClick={() => setIsOpen(false)}
                                 className="absolute -top-10 -right-30 text-white text-5xl font-bold hover:text-gray-300 transition-colors cursor-pointer">
                                 ✕
-                            </button>
+                            </button> */}
                             <Image
                                 width={1920}
-                                height={1080}
+                                height={500}
                                 src={img}
                                 alt={title}
-                                className="w-[75vw] h-auto max-h-[85vh] object-contain rounded-lg"
+                                className="max-w-fit h-auto max-h-[85vh] object-contain rounded-lg"
                             />
                         </motion.div>
                     </motion.div>
