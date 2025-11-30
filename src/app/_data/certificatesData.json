@@ -1,26 +1,68 @@
 [
     {
         "id": 1,
-        "title": "Data Analysis Certificate",
-        "info": "Completed Data Analysis professional course, covering Excel, SQL, and Python.",
-        "img": "https://i.postimg.cc/C54tVRyW/Screenshot-2025-11-27-035355.png"
+        "title": "Foundations: Data, Data, Everywhere",
+        "info": "An introductory Google course covering core concepts of data analytics, the data life cycle, and the responsibilities of data analysts.",
+        "img": "https://i.postimg.cc/13tmWkKZ/Coursera-CVNON26EJA8G.png"
     },
     {
         "id": 2,
-        "title": "Power BI Certification",
-        "info": "Hands-on Power BI training with dashboarding and DAX.",
-        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
+        "title": "Ask Questions to Make Data-Driven Decisions",
+        "info": "A Google course focused on defining business problems, forming analytical questions, and applying data-driven decision-making techniques.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
     },
     {
         "id": 3,
-        "title": "Tableau Specialist",
-        "info": "Visual analytics and storytelling with Tableau.",
-        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
     },
     {
         "id": 4,
-        "title": "Python for Data Science",
-        "info": "Applied Python for data manipulation, cleaning, and analysis.",
-        "img": "https://i.postimg.cc/wv7Q032r/39112574-programming-wallpapers.jpg"
-    }
+        "title": "Process Data from Dirty to Clean",
+        "info": "Provides essential data cleaning techniques using spreadsheets and SQL to prepare raw datasets for analysis.",
+        "img": "https://i.postimg.cc/T34RBtkn/Coursera-RIXFWN6A10I3.png"
+    },
+     {
+        "id": 5,
+        "title": "Analyze Data to Answer Questions",
+        "info": "Focuses on analytical methods for exploring datasets, identifying trends, and uncovering insights using SQL and spreadsheet tools.",
+        "img": "https://i.postimg.cc/T3wdkzJs/Coursera-0T1741JGQRRQ.png"
+    },
+     {
+        "id": 6,
+        "title": "Share Data Through the Art of Visualization",
+        "info": "Covers best practices in data visualization, dashboard creation, and presenting insights clearly to stakeholders.",
+        "img": "https://i.postimg.cc/fRrw18HH/Coursera-UQVKEB3IEUVQ.png"
+    },
+     {
+        "id": 7,
+        "title": "Data Analysis with R Programming",
+        "info": "Introduces R programming for data manipulation, visualization, and basic statistical analysis using the tidyverse ecosystem.",
+        "img": "https://i.postimg.cc/pd52vK77/Coursera-WRBG0J4FNHRB.png"
+    },
+     {
+        "id": 8,
+        "title": "Google Data Analytics Capstone: Complete a Case Study",
+        "info": "A practical case study applying the full data analysis process to a real-world business problem.",
+        "img": "https://i.postimg.cc/x140B6sz/Coursera-QJPKJDT0A23Y.png"
+    },
+     {
+        "id": 9,
+        "title": "Google Data Analytics Professional Certificate",
+        "info": "A comprehensive certification demonstrating proficiency in the complete Google Data Analytics curriculum and workflow..",
+        "img": "https://i.postimg.cc/L8bHGxyD/Coursera-TET9UHWVGL6B.png"
+    },
+     {
+        "id": 3,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
+     {
+        "id": 3,
+        "title": "Prepare Data for Exploration",
+        "info": "Covers data collection, organization, and storage principles, including data types, formats, and database fundamentals.",
+        "img": "https://i.postimg.cc/fRLzHGfF/Coursera-PS21JNYSW22V.png"
+    },
 ]
