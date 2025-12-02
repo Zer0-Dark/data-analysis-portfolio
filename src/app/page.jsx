@@ -16,8 +16,8 @@ export default function Home() {
       {/* <Loader /> */}
       <Hero></Hero>
       <Skills></Skills>
-      <Certifcates />
       <Projects></Projects>
+      <Certifcates />
       <Contact />
       <Footer />
     </div>

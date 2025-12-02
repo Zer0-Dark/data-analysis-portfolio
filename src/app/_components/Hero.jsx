@@ -72,7 +72,7 @@ function Hero() {
                 </div>
             </div>
             <div className='bg-dark-brand lg:w-1/3 w-full lg:h-full relative border-brand  border-l-2   '>
-                <Image fill={true} className='object-cover max-w-full max-h-full ' src="/pexels-ash-valiente-1680519-3533228.jpg" alt="Professional portrait" />
+                <Image fill={true} className='object-cover max-w-full max-h-full ' src="https://i.postimg.cc/TY7WWgx9/fassafafs.png" alt="Professional portrait" />
 
             </div>
         </div >
