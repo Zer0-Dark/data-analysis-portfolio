@@ -5,30 +5,28 @@ import { useState } from "react"
 
 function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg', hoveredId = null, setHoveredId = () => { } }) {
     const [isOpen, setIsOpen] = useState(false)
-    const isHovered = hoveredId === id
-    const someoneHovered = hoveredId !== null
-    const targetScale = !someoneHovered ? 1 : (isHovered ? 1.05 : 0.95)
-    const targetOpacity = !someoneHovered ? 1 : (isHovered ? 1 : 0.85)
+
 
     return (
         <>
             <motion.div
                 initial={{ scale: 0 }}
-                animate={{ scale: targetScale, opacity: targetOpacity }}
-                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                onMouseEnter={() => setHoveredId(id)}
-                onMouseLeave={() => setHoveredId(null)}
+                animate={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                 onClick={() => setIsOpen(true)}
-                className="w-[500px]  relative group border-1 rounded-md p-1 border-purple-950 cursor-pointer">
+                className="w-[500px] relative group border-1 rounded-md p-1 border-purple-950 cursor-pointer will-change-transform overflow-hidden">
                 <Image
-                    width={1920}
-                    height={1080}
+                    width={500}
+                    height={281}
                     src={img}
                     alt={title}
-                    className=""
-                    style={{ transform: "translateZ(20px)" }}
+                    className="w-full h-auto block"
+                    priority={false}
+                    loading="lazy"
+                    draggable={false}
                 />
-                <div className="absolute bottom-0 left-0 pb-5 pl-5 text-white z-30 text-2xl text-left w-full bg-[rgba(35,13,51,0.6)] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <div className="absolute bottom-0 left-0 pb-5 px-5 text-white z-30 text-2xl text-left w-full bg-[rgba(35,13,51,0.6)] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto will-change-transform">
                     <h1 className="my-2 font-semibold text-purple-300">{title}</h1>
                     <p className="text-base">{info}</p>
                 </div>
@@ -58,7 +56,7 @@ function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg',
                             </button> */}
                             <Image
                                 width={1920}
-                                height={500}
+                                height={1080}
                                 src={img}
                                 alt={title}
                                 className="max-w-fit h-auto max-h-[85vh] object-contain rounded-lg"
