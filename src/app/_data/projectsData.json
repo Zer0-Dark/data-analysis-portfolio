@@ -7,8 +7,9 @@
     },
     {
         "id": 2,
-        "title": "hello this is Project title",
-        "para": "this project is about testing some features online so idk what to do rn"
+        "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
+        "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions."
+        "img": "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png" , "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png" , "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
     },
     {
         "id": 3,
