@@ -15,26 +15,37 @@
         "id": 3,
         "title": "Wish Clothing Sales Analytics — Data Cleaning, Modeling & Interactive Dashboard",
         "para": "This project transforms raw Excel sales data for clothing products sold on Wish into a clean and structured analytical model. Using Python, I performed data cleaning, feature extraction, and exploratory analysis. Power BI was used to build the data model, create calculated columns and DAX measures, and design a dynamic dashboard showcasing sales, profit, product performance, and geographic insights. The results provide actionable business intelligence to improve pricing, stock management, marketing strategy, and product optimization."
-         "img": "https://i.postimg.cc/G3kh0ZMh/Screenshot-2025-08-27-164821.png" , "https://i.postimg.cc/SR7yWM2F/Screenshot-2025-08-27-161347.png"
+        "img": "https://i.postimg.cc/G3kh0ZMh/Screenshot-2025-08-27-164821.png" , "https://i.postimg.cc/SR7yWM2F/Screenshot-2025-08-27-161347.png"
     },
     {
         "id": 4,
-        "title": "hello this is Project title",
-        "para": "this project is about testing some features online so idk what to do rn"
+        "title": "Health Care Analytics & Interactive Dashboard",
+        "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI.Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors).Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling."
+        "img": "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png" , "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png" , "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
     },
     {
         "id": 5,
-        "title": "hello this is Project title",
-        "para": "this project is about testing some features online so idk what to do rn"
+        "title": "Pizza Sales Analytics & Interactive BI Dashboards",
+        "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI.I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights.The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance."
+        "img": "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png" , "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png" , "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png" , "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
     },
     {
         "id": 6,
-        "title": "hello this is Project title",
-        "para": "this project is about testing some features online so idk what to do rn"
+        "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
+        "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making.Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn.Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior."
+        "img": "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png" , "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png" , "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png" 
     },
     {
-        "id": 7,
-        "title": "دا تجربة لمحمود",
-        "para": "حاجات عن المشروع"
+         "id": 7,
+        "title": "Saudi Arabia Real Estate Market Analysis & Interactive Power BI Dashboard",
+        "para": "This project analyzes real real-estate data sourced from the official Saudi government platform, covering multiple cities, regions, property types, and price trends.I performed data cleaning and preparation using Python (pandas, NumPy, regex) and validated key metrics through exploratory visualizations created with Matplotlib and Seaborn.The cleaned dataset was imported into Power BI, where I built a complete analytical data model and developed numerous DAX measures and calculated columns to evaluate:Total transactions, averages, and quarterly trends Property prices by region, city, and type Rental vs. sales market segmentation Highest and lowest priced neighborhoods Price evolution over the years Geographical distribution using interactive maps The final dashboard provides a comprehensive view of real-estate dynamics in Saudi Arabia to support strategic investment and policy insights.",
+         "img": "https://i.postimg.cc/m2NvCXf8/Screenshot-2025-07-06-033806.png" , "https://i.postimg.cc/qMXPybVZ/Screenshot-2025-07-06-033917.png"  
+    },
+    {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
     }
 ]
