@@ -47,5 +47,58 @@
         "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
          "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
     },
-    }
+     {
+        "id": 9,
+        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
+        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches.I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns.The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.The project highlights organizational strengths and identifies areas for improvement, enabling data-driven HR decision-making.",
+         "img": "https://i.postimg.cc/V6RGS9hh/1750002446475.jpg" , "https://i.postimg.cc/Hx2ZJ0NK/1750002446556.jpg" , "https://i.postimg.cc/xCRxkGZp/1750002446647.jpg" , "https://i.postimg.cc/sXc6BPL0/1750002447089.jpg" , "https://i.postimg.cc/qqvm2hfY/1750002447257.jpg" ,
+    },
+     {
+        "id": 10,
+        "title": "Hotel Booking & Revenue Analytics Dashboard",
+        "para": "A full hotel analytics project built using Excel, Python, and Power BI.The data was cleaned and prepared using Pandas & NumPy, with exploratory visuals created using Seaborn and Matplotlib.After modeling the data in Power BI and building DAX measures, four interactive dashboards were developed to analyze revenue, reservations, guest types, room categories, and country-level performance.The dashboards highlight key KPIs, booking patterns, and trends that support better decision-making across hotel operations.",
+         "img": "https://i.postimg.cc/h4MC0rGW/Screenshot-2025-06-26-165944.png" , "https://i.postimg.cc/dQnW9BVb/Screenshot-2025-06-26-170021.png" , "https://i.postimg.cc/zDpdkjf1/Screenshot-2025-06-26-170056.png"  , "https://i.postimg.cc/FFGPxZKF/Screenshot-2025-06-26-170231.png"  , "https://i.postimg.cc/NfMdCHy9/Screenshot-2025-06-26-170255.png"  , "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png"  
+    },
+     {
+        "id": 11,
+        "title": "Blinkit Business Performance Analytics Dashboards",
+        "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations.The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.It provides a clear visibility into operational efficiency and helps business teams monitor KPIs in real-time.",
+         "img": "https://i.postimg.cc/N0s8LK3M/Screenshot-2025-07-20-170427.png" , "https://i.postimg.cc/ZqbP0WG0/Screenshot-2025-07-20-170513.png" , "https://i.postimg.cc/43fvnYDy/Screenshot-2025-07-20-170639.png"  , "https://i.postimg.cc/DzvQmS9J/Screenshot-2025-07-20-170722.png"  , "https://i.postimg.cc/ZqbP0WGP/Screenshot-2025-07-20-170818.png"  , "https://i.postimg.cc/s2TYWVzp/Screenshot-2025-07-20-171024.png"  
+    },
+     {
+        "id": 12,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
+     {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
+     {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
+     {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
+     {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
+     {
+        "id": 8,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+         "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
+    },
 ]
