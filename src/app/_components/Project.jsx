@@ -119,7 +119,7 @@ function Project({ title, para, img }) {
                 </motion.div>
             </div>
             {showMoreInfo &&
-                <ProjectPopup />
+                <ProjectPopup handleShow={handleShow} />
             }
         </>
     )

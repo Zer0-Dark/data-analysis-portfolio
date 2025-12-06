@@ -20,16 +20,12 @@ function SectionTitle({ title }) {
             >
                 {title}
             </motion.h2>
-            <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
+            <p
                 className="lg:w-[650px] text-center"
             >
                 We put your ideas and thus your wishes in the form of a unique web
                 project that inspires you and you customers.
-            </motion.p>
+            </p>
         </div>
     )
 }
