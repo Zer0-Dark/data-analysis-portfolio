@@ -67,8 +67,8 @@
     },
      {
         "id": 12,
-        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
-        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality.The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.The project delivers actionable insights to support merchandising and sales optimization.",
+        "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
+        "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering:Territories performance (revenue, profit, orders, returns by country) Product insights (pricing, category performance, monthly revenue trends) Overall business overview (KPIs, top customers, profit by category, and yearly sales trends) The project demonstrates strong skills in data cleaning, EDA, Power BI modeling, and dashboard design.",
          "img": "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png" , "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"  
     },
      {
