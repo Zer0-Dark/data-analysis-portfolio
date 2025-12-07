@@ -47,7 +47,7 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                 <div className="w-full">
                     <h1 className="mt-12 mb-16 p-4 mr-12 text-5xl font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
                 </div>
-                <div className="flex  justify-between gap-12 h-full pb-8">
+                <div className="flex  justify-between gap-12 h-[70%] pb-8">
                     {/* left container */}
                     <div className="w-7/12 flex flex-col justify-between h-full  ">
                         <Image
@@ -55,7 +55,7 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                             height={1080}
                             src={imgs[currentImg]}
                             alt={"test"}
-                            className=" w-full max-h-[480px] object-contain rounded-2xl  "
+                            className=" w-full max-h-[70%] object-contain rounded-2xl  "
                             style={{ transform: "translateZ(20px)" }}
 
                         />
