@@ -1,5 +1,8 @@
 import Image from "next/image"
 import { useState } from "react";
+import {
+    FaXingSquare
+} from "react-icons/fa";
 
 function ProjectPopup({ handleShow, title, para, imgs }) {
 
@@ -42,14 +45,14 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                 <button
                     className=" cursor-pointer absolute top-6 right-6 text-6xl"
                     onClick={handleShow}>
-                    X
+                    <FaXingSquare />
                 </button>
-                <div className="w-full">
-                    <h1 className="mt-12 mb-16 p-4 mr-12 text-5xl font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
+                <div className="w-full max-h-[30%]">
+                    <h1 className="mt-12 mb-16 p-4 mr-12 lg:text-4xl text-base font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
                 </div>
-                <div className="flex  justify-between gap-12 h-[70%] pb-8">
+                <div className="flex lg:flex-row flex-col  lg:justify-between lg:items-start items-center gap-12 lg:h-[70%] pb-8">
                     {/* left container */}
-                    <div className="w-7/12 flex flex-col justify-between h-full  ">
+                    <div className="lg:w-7/12 flex flex-col justify-between h-full  ">
                         <Image
                             width={1920}
                             height={1080}
@@ -78,7 +81,7 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                         </div>
                     </div>
                     {/* right container */}
-                    <div className="w-5/12">
+                    <div className="lg:w-5/12">
                         <p className="text-xl">{para}</p>
                     </div>
                 </div>
