@@ -13,7 +13,7 @@ const HALF_ROTATION_RANGE = 8 / 2;
 
 
 
-function Project({ title, para, img }) {
+function Project({ title, para, imgs }) {
 
     const handleMouseMove = (e) => {
         if (!ref.current) return [0, 0];
@@ -88,9 +88,9 @@ function Project({ title, para, img }) {
                         <Image
                             width={1920}
                             height={1080}
-                            src={"/313123.jpg"}
+                            src={imgs[0]}
                             alt={title}
-                            className="w-full  object-contain rounded mb-4 grayscale-25 hover:grayscale-0 transition-all timin"
+                            className="w-full h-96  object-contain rounded mb-4 grayscale-25 hover:grayscale-0 transition-all timin"
                             style={{ transform: "translateZ(20px)" }}
 
                         />
@@ -119,7 +119,7 @@ function Project({ title, para, img }) {
                 </motion.div>
             </div>
             {showMoreInfo &&
-                <ProjectPopup handleShow={handleShow} />
+                <ProjectPopup handleShow={handleShow} title={title} para={para} imgs={imgs} />
             }
         </>
     )
