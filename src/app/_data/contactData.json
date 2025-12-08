@@ -2,31 +2,31 @@
   {
     "id": 1,
     "icon": "phone",
-    "label": "+1232123",
-    "href": "tel:+201278113299"
+    "label": "Phone",
+    "href": "tel:+201044293980"
   },
   {
     "id": 2,
     "icon": "email",
-    "label": "wearehere@gmail.com",
-    "href": "mailto:test11.test@gmail.com"
+    "label": "Gmail",
+    "href": "mahmoudelzeiat7@gmail.com"
   },
   {
     "id": 3,
     "icon": "facebook",
     "label": "Facebook",
-    "href": "https://facebook.com"
+    "href": "https://www.facebook.com/share/1DcEBdpVH8/"
   },
   {
     "id": 4,
     "icon": "linkedin",
     "label": "Linkedin",
-    "href": "https://linkedin.com"
+    "href": "www.linkedin.com/in/mahmoud-elzayat-data-analysis"
   },
   {
     "id": 5,
     "icon": "github",
     "label": "Github",
-    "href": "https://github.com"
+    "href": "https://github.com/M-Elzayat"
   }
 ]
