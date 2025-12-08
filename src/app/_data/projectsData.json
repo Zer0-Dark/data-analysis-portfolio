@@ -156,15 +156,12 @@
     },
     {
         "id": 15,
-        "title": "Blinkit Business Performance Analytics Dashboards",
-        "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations. The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.",
+        "title": "Title: Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
+        "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
         "imgs": [
-            "https://i.postimg.cc/N0s8LK3M/Screenshot-2025-07-20-170427.png",
-            "https://i.postimg.cc/ZqbP0WG0/Screenshot-2025-07-20-170513.png",
-            "https://i.postimg.cc/43fvnYDy/Screenshot-2025-07-20-170639.png",
-            "https://i.postimg.cc/DzvQmS9J/Screenshot-2025-07-20-170722.png",
-            "https://i.postimg.cc/ZqbP0WGP/Screenshot-2025-07-20-170818.png",
-            "https://i.postimg.cc/s2TYWVzp/Screenshot-2025-07-20-171024.png"
+            "https://i.postimg.cc/mgddrwqz/Screenshot-2025-12-07-182549.png",
+            "https://i.postimg.cc/XY22v8hr/Screenshot-2025-12-07-182647.png",
+            "https://i.postimg.cc/BnhhvgyK/Screenshot-2025-12-07-182755.png"
         ]
     },
     {
