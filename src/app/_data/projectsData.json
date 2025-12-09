@@ -156,7 +156,7 @@
     },
     {
         "id": 15,
-        "title": Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
+        "title": "Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
         "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
         "imgs": [
             "https://i.postimg.cc/mgddrwqz/Screenshot-2025-12-07-182549.png",
