@@ -13,13 +13,15 @@
         ]
     },
     {
-        "id": 2,
-        "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
-        "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
+              "id": 2,
+        "title": "Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
+        "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
         "imgs": [
-            "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
-            "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png",
-            "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
+            "https://i.postimg.cc/j590H4C2/Screenshot-2025-12-07-182549.png",
+            "https://i.postimg.cc/DZDkrPmm/Screenshot-2025-12-07-182647.png",
+            "https://i.postimg.cc/HxKDw9jV/Screenshot-2025-12-07-182755.png",
+            "https://i.postimg.cc/qRgH65BV/Screenshot-2025-12-09-145717.png",
+            "https://i.postimg.cc/rmbX1NzD/Screenshot-2025-12-09-145738.png"            
         ]
     },
     {
@@ -156,12 +158,12 @@
     },
     {
         "id": 15,
-        "title": "Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
-        "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
+        "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
+        "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
         "imgs": [
-            "https://i.postimg.cc/mgddrwqz/Screenshot-2025-12-07-182549.png",
-            "https://i.postimg.cc/XY22v8hr/Screenshot-2025-12-07-182647.png",
-            "https://i.postimg.cc/BnhhvgyK/Screenshot-2025-12-07-182755.png"
+            "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
+            "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png",
+            "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
         ]
     },
     {
