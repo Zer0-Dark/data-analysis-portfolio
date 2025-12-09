@@ -13,7 +13,19 @@
         ]
     },
     {
-              "id": 2,
+         "id": 2,
+        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
+        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
+        "imgs": [
+            "https://i.postimg.cc/V6RGS9hh/1750002446475.jpg",
+            "https://i.postimg.cc/Hx2ZJ0NK/1750002446556.jpg",
+            "https://i.postimg.cc/xCRxkGZp/1750002446647.jpg",
+            "https://i.postimg.cc/sXc6BPL0/1750002447089.jpg",
+            "https://i.postimg.cc/qqvm2hfY/1750002447257.jpg"
+        ]
+    },
+    {
+             "id": 3,
         "title": "Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
         "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
         "imgs": [
@@ -25,22 +37,18 @@
         ]
     },
     {
-        "id": 3,
-        "title": "Wish Clothing Sales Analytics & Interactive Dashboard",
-        "para": "This project transforms raw Excel sales data for clothing products sold on Wish into a clean and structured analytical model. Using Python, I performed data cleaning, feature extraction, and exploratory analysis. Power BI was used to build the data model, create calculated columns and DAX measures, and design a dynamic dashboard showcasing sales, profit, product performance, and geographic insights. The results provide actionable business intelligence to improve pricing, stock management, marketing strategy, and product optimization.",
-        "imgs": [
-            "https://i.postimg.cc/G3kh0ZMh/Screenshot-2025-08-27-164821.png",
-            "https://i.postimg.cc/SR7yWM2F/Screenshot-2025-08-27-161347.png"
-        ]
-    },
-    {
         "id": 4,
-        "title": "Health Care Analytics & Interactive Dashboard",
-        "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
+        "title": "Toyota Sales & Revenue Intelligence Dashboard – Abdul Latif Jameel Motors (KSA)",
+        "para": "This project delivers a full analytics solution for Abdul Latif Jameel Motors using Excel, Python, and Power BI. I cleaned and analyzed the raw data using Pandas and NumPy, and generated exploratory visuals with Matplotlib and Seaborn. The refined dataset was modeled in Power BI, supported with DAX measures and calculated columns. The final output includes three interactive dashboards covering sales performance, revenue analysis, and vehicle model insights. These dashboards present clear KPIs, trends, and comparisons to support data-driven decision-making. The project emphasizes clean design, consistent branding, and a highly interactive user experience.",
         "imgs": [
-            "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
-            "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png",
-            "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
+            "https://i.postimg.cc/mgk3GhFh/Screenshot-2025-12-07-164622.png",
+            "https://i.postimg.cc/13X0Z4Nq/Screenshot-2025-12-07-164736.png",
+            "https://i.postimg.cc/Z5Q8YZr0/Screenshot-2025-12-07-171936.png",
+            "https://i.postimg.cc/HkNwWHQQ/Screenshot-2025-12-07-172013.png",
+            "https://i.postimg.cc/pLSfVxDf/Screenshot-2025-12-07-172110.png",
+            "https://i.postimg.cc/Z5Q8YZr7/Screenshot-2025-12-07-172356.png",
+            "https://i.postimg.cc/ZnsgN1FG/Screenshot-2025-12-09-162732.png"
+
         ]
     },
     {
@@ -83,15 +91,13 @@
         ]
     },
     {
-        "id": 9,
-        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
-        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
+       "id": 9,
+        "title": "Health Care Analytics & Interactive Dashboard",
+        "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
         "imgs": [
-            "https://i.postimg.cc/V6RGS9hh/1750002446475.jpg",
-            "https://i.postimg.cc/Hx2ZJ0NK/1750002446556.jpg",
-            "https://i.postimg.cc/xCRxkGZp/1750002446647.jpg",
-            "https://i.postimg.cc/sXc6BPL0/1750002447089.jpg",
-            "https://i.postimg.cc/qqvm2hfY/1750002447257.jpg"
+            "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
+            "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png",
+            "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
         ]
     },
     {
@@ -132,17 +138,13 @@
         ]
     },
     {
-        "id": 13,
-        "title": "Toyota Sales & Revenue Intelligence Dashboard – Abdul Latif Jameel Motors (KSA)",
-        "para": "This project delivers a full analytics solution for Abdul Latif Jameel Motors using Excel, Python, and Power BI. I cleaned and analyzed the raw data using Pandas and NumPy, and generated exploratory visuals with Matplotlib and Seaborn. The refined dataset was modeled in Power BI, supported with DAX measures and calculated columns. The final output includes three interactive dashboards covering sales performance, revenue analysis, and vehicle model insights. These dashboards present clear KPIs, trends, and comparisons to support data-driven decision-making. The project emphasizes clean design, consistent branding, and a highly interactive user experience.",
+       
+  "id": 13,
+        "title": "Wish Clothing Sales Analytics & Interactive Dashboard",
+        "para": "This project transforms raw Excel sales data for clothing products sold on Wish into a clean and structured analytical model. Using Python, I performed data cleaning, feature extraction, and exploratory analysis. Power BI was used to build the data model, create calculated columns and DAX measures, and design a dynamic dashboard showcasing sales, profit, product performance, and geographic insights. The results provide actionable business intelligence to improve pricing, stock management, marketing strategy, and product optimization.",
         "imgs": [
-            "https://i.postimg.cc/RZh1zqnC/Screenshot-2025-12-07-164356.png",
-            "https://i.postimg.cc/mgk3GhFh/Screenshot-2025-12-07-164622.png",
-            "https://i.postimg.cc/13X0Z4Nq/Screenshot-2025-12-07-164736.png",
-            "https://i.postimg.cc/Z5Q8YZr0/Screenshot-2025-12-07-171936.png",
-            "https://i.postimg.cc/HkNwWHQQ/Screenshot-2025-12-07-172013.png",
-            "https://i.postimg.cc/pLSfVxDf/Screenshot-2025-12-07-172110.png",
-            "https://i.postimg.cc/Z5Q8YZr7/Screenshot-2025-12-07-172356.png"
+            "https://i.postimg.cc/G3kh0ZMh/Screenshot-2025-08-27-164821.png",
+            "https://i.postimg.cc/SR7yWM2F/Screenshot-2025-08-27-161347.png"
         ]
     },
     {
