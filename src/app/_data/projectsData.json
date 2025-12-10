@@ -54,13 +54,12 @@
     },
     {
         "id": 5,
-        "title": "Pizza Sales Analytics & Interactive BI Dashboards",
-        "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
+        "title": "Saudi Arabia Real Estate Market Analysis & Interactive Power BI Dashboard",
+        "para": "This project analyzes real real-estate data sourced from the official Saudi government platform, covering multiple cities, regions, property types, and price trends. I performed data cleaning and preparation using Python (pandas, NumPy, regex) and validated key metrics through exploratory visualizations created with Matplotlib and Seaborn. The cleaned dataset was imported into Power BI, where I built a complete analytical data model and developed numerous DAX measures and calculated columns to evaluate a variety of market metrics.",
         "imgs": [
-            "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png",
-            "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
-            "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
-            "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
+            "https://i.postimg.cc/LsvtnKMZ/Screenshot_2025_07_06_033806.png",
+            "https://i.postimg.cc/zBBnhtJW/Screenshot_2025_07_06_033917.png",
+            "https://i.postimg.cc/zBBnhtJW/Screenshot_2025_07_06_033917.png"
         ]
     },
     {
@@ -75,12 +74,15 @@
     },
     {
         "id": 7,
-        "title": "Saudi Arabia Real Estate Market Analysis & Interactive Power BI Dashboard",
-        "para": "This project analyzes real real-estate data sourced from the official Saudi government platform, covering multiple cities, regions, property types, and price trends. I performed data cleaning and preparation using Python (pandas, NumPy, regex) and validated key metrics through exploratory visualizations created with Matplotlib and Seaborn. The cleaned dataset was imported into Power BI, where I built a complete analytical data model and developed numerous DAX measures and calculated columns to evaluate a variety of market metrics.",
+        "title": "Pizza Sales Analytics & Interactive BI Dashboards",
+        "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
         "imgs": [
-            "https://i.postimg.cc/LsvtnKMZ/Screenshot_2025_07_06_033806.png",
-            "https://i.postimg.cc/zBBnhtJW/Screenshot_2025_07_06_033917.png",
-            "https://i.postimg.cc/zBBnhtJW/Screenshot_2025_07_06_033917.png"
+            "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png",
+            "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
+            "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
+            "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
+
+
         ]
     },
     {
