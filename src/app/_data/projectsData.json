@@ -189,8 +189,8 @@
     },
     {
         "id": 18,
-        "title": "Multi-Dashboard Sales & Weather Analytics — E-Commerce / After-Sales Insights",
-        "para": "A multi-dashboard Power BI project analyzing sales and weather data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
+        "title": "Auto Sales & Weather Impact Dashboard",
+        "para": "A Auto Sales & Weather Impact Data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
         "imgs": [
             "https://i.postimg.cc/8zN3dR30/Screenshot-2025-06-05-113007.png",
             "https://i.postimg.cc/T3fSjVS7/Screenshot-2025-06-05-113037.png",
