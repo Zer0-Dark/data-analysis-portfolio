@@ -67,16 +67,20 @@
         "title": "Property Management Dashboard — Real Estate Performance & Sales Analysis",
         "para": "This Real Estate Property Management dashboard was built using Excel data and developed entirely in Power BI. The project includes full data cleaning with Power Query, data modeling, and the creation of DAX measures and calculated columns. The dashboard provides key insights into revenue, sales channels, property types, client performance, and country-level distribution. It helps identify top clients, track payment status, and highlight the most profitable properties to support strategic decision-making.",
         "imgs": [
-            "https://i.postimg.cc/0yMcZ652/Screenshot-2025-12-10-221627.png"
+            "https://i.postimg.cc/q71wh3vn/Screenshot_2025_12_10_221627.png",
+            "https://i.postimg.cc/R0gd6HZJ/Screenshot_2025_12_11_123352.png"
         ]
     {
-        "id": 7,
-        "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
-        "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
+         "id": 7,
+        "title": "Hotel Booking & Revenue Analytics Dashboard",
+        "para": "A full hotel analytics project built using Excel, Python, and Power BI. The data was cleaned and prepared using Pandas & NumPy, with exploratory visuals created using Seaborn and Matplotlib. After modeling the data in Power BI and building DAX measures, four interactive dashboards were developed to analyze revenue, reservations, guest types, room categories, and country-level performance.",
         "imgs": [
-            "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
-            "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png",
-            "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png"
+            "https://i.postimg.cc/h4MC0rGW/Screenshot-2025-06-26-165944.png",
+            "https://i.postimg.cc/dQnW9BVb/Screenshot-2025-06-26-170021.png",
+            "https://i.postimg.cc/zDpdkjf1/Screenshot-2025-06-26-170056.png",
+            "https://i.postimg.cc/FFGPxZKF/Screenshot-2025-06-26-170231.png",
+            "https://i.postimg.cc/NfMdCHy9/Screenshot-2025-06-26-170255.png",
+            "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png"
         ]
     },
     {
@@ -112,16 +116,13 @@
         ]
     },
     {
-        "id": 11,
-        "title": "Hotel Booking & Revenue Analytics Dashboard",
-        "para": "A full hotel analytics project built using Excel, Python, and Power BI. The data was cleaned and prepared using Pandas & NumPy, with exploratory visuals created using Seaborn and Matplotlib. After modeling the data in Power BI and building DAX measures, four interactive dashboards were developed to analyze revenue, reservations, guest types, room categories, and country-level performance.",
+         "id": 11,
+        "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
+        "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
         "imgs": [
-            "https://i.postimg.cc/h4MC0rGW/Screenshot-2025-06-26-165944.png",
-            "https://i.postimg.cc/dQnW9BVb/Screenshot-2025-06-26-170021.png",
-            "https://i.postimg.cc/zDpdkjf1/Screenshot-2025-06-26-170056.png",
-            "https://i.postimg.cc/FFGPxZKF/Screenshot-2025-06-26-170231.png",
-            "https://i.postimg.cc/NfMdCHy9/Screenshot-2025-06-26-170255.png",
-            "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png"
+            "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
+            "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png",
+            "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png"
         ]
     },
     {
