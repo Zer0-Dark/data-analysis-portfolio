@@ -66,7 +66,9 @@
         "id": 6,
         "title": "Property Management Dashboard — Real Estate Performance & Sales Analysis",
         "para": "This Real Estate Property Management dashboard was built using Excel data and developed entirely in Power BI. The project includes full data cleaning with Power Query, data modeling, and the creation of DAX measures and calculated columns. The dashboard provides key insights into revenue, sales channels, property types, client performance, and country-level distribution. It helps identify top clients, track payment status, and highlight the most profitable properties to support strategic decision-making.",
-        "imgs": "https://i.postimg.cc/0yMcZ652/Screenshot-2025-12-10-221627.png"
+        "imgs": [
+            "https://i.postimg.cc/0yMcZ652/Screenshot-2025-12-10-221627.png"
+        ]
     {
         "id": 7,
         "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
