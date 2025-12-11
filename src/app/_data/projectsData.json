@@ -70,6 +70,7 @@
             "https://i.postimg.cc/q71wh3vn/Screenshot_2025_12_10_221627.png",
             "https://i.postimg.cc/R0gd6HZJ/Screenshot_2025_12_11_123352.png"
         ]
+     },
     {
          "id": 7,
         "title": "Hotel Booking & Revenue Analytics Dashboard",
@@ -80,7 +81,9 @@
             "https://i.postimg.cc/zDpdkjf1/Screenshot-2025-06-26-170056.png",
             "https://i.postimg.cc/FFGPxZKF/Screenshot-2025-06-26-170231.png",
             "https://i.postimg.cc/NfMdCHy9/Screenshot-2025-06-26-170255.png",
-            "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png"
+            "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png",
+            "https://i.postimg.cc/zfW9Zpz3/Screenshot_2025_12_11_133115.png",
+            "https://i.postimg.cc/wBJS8Fqv/Screenshot_2025_12_11_133235.png"
         ]
     },
     {
@@ -92,8 +95,6 @@
             "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
             "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
             "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
-
-
         ]
     },
     {
@@ -164,7 +165,6 @@
         "title": "Mobile Phones Sales Analytics – Interactive Power BI Dashboard",
         "para": "A comprehensive data analytics project that explores mobile phone sales performance using real marketplace data. The dataset was cleaned and prepared using Python (Pandas & NumPy), followed by advanced data modeling and DAX calculations in Power BI to build three fully-interactive dashboards.The dashboards provide insights into product prices, discounts, offers, sales performance by brand, customer ratings, and business metrics such as Prime products, Amazon’s Choice, and Best-Seller distribution.This project highlights the end-to-end analytics process from raw data → data cleaning → transformation → modeling → visualization → business insights.",
         "imgs": [
-            "https://i.postimg.cc/bYCbzp09/Screenshot-2025-12-07-180412.png",
             "https://i.postimg.cc/8c0rwmP1/Screenshot-2025-12-07-180702.png",
             "https://i.postimg.cc/Xqzyxk7W/Screenshot-2025-12-07-180815.png",
             "https://i.postimg.cc/cCb8TB4d/Screenshot-2025-12-07-181324.png"
