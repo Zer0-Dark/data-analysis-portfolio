@@ -67,8 +67,9 @@ function Project({ title, para, imgs }) {
                 ref={containerRef}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="lg:w-[calc(50%_-_15px)] p-4"
+                className="lg:w-[calc(50%_-_15px)]  lg:p-4 cursor-pointer"
                 style={{ perspective: "2000px" }}
+                onClick={handleShow}
             >
                 <motion.div
                     ref={ref}
@@ -76,7 +77,7 @@ function Project({ title, para, imgs }) {
                         transformStyle: "preserve-3d",
                         transform,
                     }}
-                    className="bg-brand-semi-dark rounded-xl p-6 text-white border-1 border-purple-950"
+                    className="bg-brand-semi-dark rounded-xl lg:p-6 p-2 text-white border-1 border-purple-950"
                 >
                     <div
                         style={{
@@ -90,26 +91,29 @@ function Project({ title, para, imgs }) {
                             height={1080}
                             src={imgs[0]}
                             alt={title}
-                            className="w-full h-96  object-contain rounded mb-4 grayscale-25 hover:grayscale-0 transition-all timin"
+                            className="w-full max-h-96  h-fit  object-contain rounded lg:mb-12 mb-10 "
                             style={{ transform: "translateZ(20px)" }}
 
                         />
                         <h1
-                            className="text-3xl capitalize font-bold mb-2 text-brand"
+                            className="lg:text-3xl text-xl capitalize font-bold mb-2 text-brand"
                             style={{ transform: "translateZ(40px)" }}
                         >
                             {title}
                         </h1>
                         <p
-                            className="text-white mb-4"
+                            className="text-white mb-4 lg:text-base text-sm"
                             style={{ transform: "translateZ(30px)" }}
                         >
                             {para}
                         </p>
                         <button
-                            className="px-4 py-2 text-xl bg-brand text-brand-dark font-bold hover:text-white rounded border-2 border-transparent hover:bg-brand-dark hover:border-brand cursor-pointer"
+                            className="px-4 py-2 lg:text-xl bg-brand text-brand-dark font-bold hover:text-white rounded border-2 border-transparent hover:bg-brand-dark hover:border-brand cursor-pointer z-30"
                             style={{ transform: "translateZ(50px)" }}
-                            onClick={handleShow}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setShowMoreInfo((value) => !value);
+                            }}
                         >
                             See more
                         </button>

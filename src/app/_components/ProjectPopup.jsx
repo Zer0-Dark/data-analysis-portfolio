@@ -1,14 +1,30 @@
 import Image from "next/image"
 import { useState } from "react";
 import {
-    FaXingSquare
+    FaXingSquare,
+    FaArrowAltCircleRight,
+    FaArrowAltCircleLeft
 } from "react-icons/fa";
 
 function ProjectPopup({ handleShow, title, para, imgs }) {
 
     const [currentImg, setCurrentImg] = useState(0)
     const [scrollIndex, setScrollIndex] = useState(0)
+    const [imgExpand, setImgExpand] = useState(false)
     const visibleThumbnails = 5
+
+    function handleBigImgButton(dir) {
+        if (dir === 0) {
+            if (currentImg < imgs.length - 1) {
+
+                setCurrentImg((prev) => prev + 1)
+            }
+        } else {
+            if (currentImg > 0) {
+                setCurrentImg((prev) => prev - 1)
+            }
+        }
+    }
 
     function handleImgClick(e) {
         setCurrentImg(Number(e.target.id))
@@ -40,52 +56,81 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
     }
     return (
         <div className=" w-screen h-screen fixed flex justify-center items-center  bg-[rgba(0,0,0,0.6)] top-0 left-0 z-50 text-white">
+            {
+                !imgExpand &&
+                <div
+                    className="flex flex-col items-center  lg:h-[90%] h-[95%] lg:w-[90%] w-[95%] bg-brand-dark relative rounded-md lg:px-12 px-5 border-2 border-brand">
+                    <button
+                        className=" cursor-pointer absolute top-4 right-4 text-4xl lg:text-6xl"
+                        onClick={handleShow}>
+                        <FaXingSquare />
+                    </button>
+                    <div className="w-full max-h-[30%]">
+                        <h1 className="lg:mt-12 mt-10 lg:mb-16 mb-4 p-4 lg:mr-12 lg:text-4xl text-base font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
+                    </div>
+                    <div className="flex lg:flex-row flex-col  lg:justify-between lg:items-start items-center lg:gap-12 gap-3 lg:h-[70%] pb-8">
+                        {/* left container */}
+                        <div className="lg:w-7/12 flex flex-col justify-between lg:h-full  ">
+                            <Image
+                                onClick={() => setImgExpand((prev) => !prev)}
+                                width={1920}
+                                height={1080}
+                                src={imgs[currentImg]}
+                                alt={"test"}
+                                className=" cursor-pointer w-full max-h-[70%] object-contain rounded-2xl  "
+                                style={{ transform: "translateZ(20px)" }}
 
-            <div className="flex flex-col items-center h-[90%] w-[90%] bg-brand-dark relative rounded-md px-12 border-2 border-brand">
-                <button
-                    className=" cursor-pointer absolute top-6 right-6 text-6xl"
-                    onClick={handleShow}>
-                    <FaXingSquare />
-                </button>
-                <div className="w-full max-h-[30%]">
-                    <h1 className="mt-12 mb-16 p-4 mr-12 lg:text-4xl text-base font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
-                </div>
-                <div className="flex lg:flex-row flex-col  lg:justify-between lg:items-start items-center gap-12 lg:h-[70%] pb-8">
-                    {/* left container */}
-                    <div className="lg:w-7/12 flex flex-col justify-between h-full  ">
-                        <Image
-                            width={1920}
-                            height={1080}
-                            src={imgs[currentImg]}
-                            alt={"test"}
-                            className=" w-full max-h-[70%] object-contain rounded-2xl  "
-                            style={{ transform: "translateZ(20px)" }}
-
-                        />
-                        <div className="flex  gap-4 py-4 mt-4 relative">
-                            <button
-                                onClick={handlePrevScroll}
-                                disabled={scrollIndex === 0}
-                                className="absolute z-50 left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
-                                &lt;
-                            </button>
-                            <div className="flex w-full gap-4 px-12 overflow-hidden justify-center items-center ">
-                                {imgsContainer}
+                            />
+                            <div className="flex  gap-4 py-4 mt-4 relative">
+                                <button
+                                    onClick={handlePrevScroll}
+                                    disabled={scrollIndex === 0}
+                                    className="absolute cursor-pointer z-50 left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
+                                    <FaArrowAltCircleLeft />
+                                </button>
+                                <div className="flex w-full gap-4 px-12 overflow-hidden justify-center items-center ">
+                                    {imgsContainer}
+                                </div>
+                                <button
+                                    onClick={handleNextScroll}
+                                    disabled={scrollIndex >= imgs.length - visibleThumbnails}
+                                    className="absolute cursor-pointer z-50 right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
+                                    <FaArrowAltCircleRight />
+                                </button>
                             </div>
-                            <button
-                                onClick={handleNextScroll}
-                                disabled={scrollIndex >= imgs.length - visibleThumbnails}
-                                className="absolute z-50 right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
-                                &gt;
-                            </button>
+                        </div>
+                        {/* right container */}
+                        <div className="lg:w-5/12 overflow-hidden max-h-full text-sm">
+                            <p className="">{para}</p>
                         </div>
                     </div>
-                    {/* right container */}
-                    <div className="lg:w-5/12">
-                        <p className="text-xl">{para}</p>
-                    </div>
                 </div>
-            </div>
+            }
+
+            {
+                imgExpand &&
+                <div className=" absolute gap-6  flex  items-center justify-center h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
+
+                    <button onClick={() => setImgExpand((prev) => !prev)} className=" absolute text-6xl top-6 right-6 cursor-pointer">
+                        <FaXingSquare />
+                    </button>
+                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(1) }}>
+                        <FaArrowAltCircleLeft />
+                    </button>
+                    <Image
+                        width={1920}
+                        height={1080}
+                        src={imgs[currentImg]}
+                        alt={"test"}
+                        className=" w-full max-h-[90%] object-contain rounded-2xl  "
+                        style={{ transform: "translateZ(20px)" }}
+                    />
+                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(0) }}>
+                        <FaArrowAltCircleRight />
+                    </button>
+                </div>
+            }
+
         </div>
     )
 }

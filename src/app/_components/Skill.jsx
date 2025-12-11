@@ -60,7 +60,7 @@ function Skill({ skillName, skillIcon }) {
                     transformStyle: "preserve-3d",
                     transform,
                 }}
-                className="w-54 h-62 bg-brand-semi-dark flex flex-col justify-center items-center hover:bg-brand transition-colors duration-500 rounded-2xl"
+                className="lg:w-54 lg:h-62 w-44 h-52  bg-brand-semi-dark flex flex-col justify-center items-center hover:bg-brand transition-colors duration-500 rounded-2xl"
             >
                 <div
                     style={{
@@ -73,8 +73,8 @@ function Skill({ skillName, skillIcon }) {
                         style={{ transform: "translateZ(50px)" }}
                         src={skillIcon}
                         alt="test"
-                        width={130}
-                        height={80}
+                        width={100}
+                        height={50}
                     />
                     <h1
                         style={{ transform: "translateZ(75px)" }}

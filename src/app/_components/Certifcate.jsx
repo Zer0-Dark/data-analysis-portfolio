@@ -59,7 +59,7 @@ function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg',
                                 height={1080}
                                 src={img}
                                 alt={title}
-                                className="max-w-fit h-auto max-h-[85vh] object-contain rounded-lg"
+                                className="lg:max-w-fit max-w-[90%] lg:h-auto  lg:max-h-[85vh] object-contain rounded-lg"
                             />
                         </motion.div>
                     </motion.div>
