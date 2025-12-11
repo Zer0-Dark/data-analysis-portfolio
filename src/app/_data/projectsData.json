@@ -87,47 +87,7 @@
         ]
     },
     {
-        "id": 8,
-        "title": "Pizza Sales Analytics & Interactive BI Dashboards",
-        "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
-        "imgs": [
-            "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png",
-            "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
-            "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
-            "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
-        ]
-    },
-    {
-        "id": 9,
-        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
-        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality. The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.",
-        "imgs": [
-            "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png",
-            "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"
-        ]
-    },
-    {
-       "id": 10,
-        "title": "Health Care Analytics & Interactive Dashboard",
-        "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
-        "imgs": [
-            "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
-            "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png",
-            "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
-        ]
-    },
-    {
-         "id": 11,
-        "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
-        "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
-        "imgs": [
-            "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
-            "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png",
-            "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png"
-        ]
-    },
-    {
-        "id": 12,
+               "id": 8,
         "title": "Blinkit Business Performance Analytics Dashboards",
         "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations. The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.",
         "imgs": [
@@ -137,6 +97,47 @@
             "https://i.postimg.cc/DzvQmS9J/Screenshot-2025-07-20-170722.png",
             "https://i.postimg.cc/ZqbP0WGP/Screenshot-2025-07-20-170818.png",
             "https://i.postimg.cc/s2TYWVzp/Screenshot-2025-07-20-171024.png"
+        ]
+    },
+    {
+       "id": 9,
+        "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
+        "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
+        "imgs": [
+            "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
+            "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png",
+            "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png"
+        ]
+    },
+    {
+       "id": 10,
+        "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
+        "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
+        "imgs": [
+            "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
+            "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png",
+            "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Health Care Analytics & Interactive Dashboard",
+        "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
+        "imgs": [
+            "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
+            "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png",
+            "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
+        ]
+    },
+    {
+         "id": 12,
+        "title": "Pizza Sales Analytics & Interactive BI Dashboards",
+        "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
+        "imgs": [
+            "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png",
+            "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
+            "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
+            "https://i.postimg.cc/RVw5gp7V/Screenshot-2025-10-21-183727.png"
         ]
     },
     {
@@ -171,13 +172,12 @@
         ]
     },
     {
-        "id": 16,
-        "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
-        "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
+          "id": 16,
+        "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
+        "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality. The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.",
         "imgs": [
-            "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
-            "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png",
-            "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
+            "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png",
+            "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"
         ]
     },
     {
