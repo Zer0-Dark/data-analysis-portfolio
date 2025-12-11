@@ -189,14 +189,15 @@
             "https://i.postimg.cc/zG64yskH/Screenshot-2025-12-09-112410.png"
         ]
     },
-    {
-        "id": 18,
-        "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
-        "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn. After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering territories performance, product insights, and an overall business overview.",
-        "imgs": [
-            "https://i.postimg.cc/65TRhB8q/Screenshot-2025-07-09-170559.png",
-            "https://i.postimg.cc/QxDwBnCK/Screenshot-2025-07-09-171045.png",
-            "https://i.postimg.cc/xCFy38y3/Screenshot-2025-07-09-165732.png"
-        ]
-    }
+ [
+  {
+    "id": 18,
+    "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
+    "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn. After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering territories performance, product insights, and an overall business overview.",
+    "imgs": [
+      "https://i.postimg.cc/65TRhB8q/Screenshot-2025-07-09-170559.png",
+      "https://i.postimg.cc/QxDwBnCK/Screenshot-2025-07-09-171045.png",
+      "https://i.postimg.cc/xCFy38y3/Screenshot-2025-07-09-165732.png"
+    ]
+  }
 ]
