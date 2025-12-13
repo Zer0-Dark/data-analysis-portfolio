@@ -7,6 +7,7 @@ import Loader from "./_components/Loader";
 import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
 import Certifcates from "./_components/Certifcates";
+import NewHero from "./_components/NewHero";
 
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
   return (
     <div className="min-h-screen text-white">
       {/* <Loader /> */}
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
+      <NewHero />
       <Skills></Skills>
       <Projects></Projects>
       <Certifcates />

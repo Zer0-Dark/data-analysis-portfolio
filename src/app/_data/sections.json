@@ -3,7 +3,12 @@
         "name": "Mahmoud Mohamed El-Zayat",
         "role": "Data Analyst",
         "description": "Detail-oriented Data Analyst with a strong background in business and accounting, combined with hands-on experience in data analysis tools and real-world projects.",
-        "cvLink": "/cv.pdf"
+        "cvLink": "/cv.pdf",
+        "heroImage": "/tt.png",
+        "subDescription": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim harum maxime illum sequi iste suscipit eveniet eum, velit, nemo soluta quod eius totam! Minus in reprehenderit harum totam debitis.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim harum maxime illum sequi iste suscipit eveniet eum, velit, nemo soluta quod eius totam! Minus in reprehenderit harum totam debitis."
+        ]
     },
     "skills": {
         "title": "My Skills",

@@ -15,7 +15,7 @@ function Certifcate({ id, title = 'Certificate', info = '', img = '/313123.jpg',
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                 onClick={() => setIsOpen(true)}
-                className="w-[500px] relative group border-1 rounded-md p-1 border-purple-950 cursor-pointer will-change-transform overflow-hidden">
+                className="w-[400px] relative group border-1 rounded-md p-1 border-purple-950 cursor-pointer will-change-transform overflow-hidden">
                 <Image
                     width={500}
                     height={281}

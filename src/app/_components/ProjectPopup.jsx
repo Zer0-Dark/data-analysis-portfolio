@@ -27,6 +27,7 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
     }
 
     function handleImgClick(e) {
+        // For video elements, the id might be on the video tag itself
         setCurrentImg(Number(e.target.id))
     }
 
@@ -38,22 +39,43 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
         setScrollIndex(Math.min(imgs.length - visibleThumbnails, scrollIndex + 1))
     }
 
+    const isVideo = (url) => url.toLowerCase().endsWith('.mp4');
+
     let imgsContainer = [];
     for (let i = scrollIndex; i < Math.min(scrollIndex + visibleThumbnails, imgs.length); i++) {
+        const url = imgs[i];
+        const isVid = isVideo(url);
+
         imgsContainer.push(
-            <Image
-                onClick={handleImgClick}
-                key={i}
-                id={i}
-                width={1920}
-                height={1080}
-                src={imgs[i]}
-                alt={"test"}
-                className={`cursor-pointer object-contain rounded-xl w-32 h-18  ${currentImg == i ? "border-4 border-brand grayscale-0" : "grayscale-75 hover:grayscale-50"}`}
-                style={{ transform: "translateZ(20px)" }}
-            />
+            isVid ? (
+                <video
+                    onClick={handleImgClick}
+                    key={i}
+                    id={i}
+                    src={url}
+                    className={`cursor-pointer object-cover rounded-xl w-32 h-18 bg-black ${currentImg == i ? "border-4 border-brand grayscale-0" : "grayscale-75 hover:grayscale-50"}`}
+                    style={{ transform: "translateZ(20px)" }}
+                    muted
+                />
+            ) : (
+                <Image
+                    onClick={handleImgClick}
+                    key={i}
+                    id={i}
+                    width={1920}
+                    height={1080}
+                    src={url}
+                    alt={"test"}
+                    className={`cursor-pointer object-contain rounded-xl w-32 h-18  ${currentImg == i ? "border-4 border-brand grayscale-0" : "grayscale-75 hover:grayscale-50"}`}
+                    style={{ transform: "translateZ(20px)" }}
+                />
+            )
         )
     }
+
+    const currentUrl = imgs[currentImg];
+    const currentIsVideo = isVideo(currentUrl);
+
     return (
         <div className=" w-screen h-screen fixed flex justify-center items-center  bg-[rgba(0,0,0,0.6)] top-0 left-0 z-50 text-white">
             {
@@ -71,16 +93,28 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                     <div className="flex lg:flex-row flex-col  lg:justify-between lg:items-start items-center lg:gap-12 gap-3 lg:h-[70%] pb-8">
                         {/* left container */}
                         <div className="lg:w-7/12 flex flex-col justify-between lg:h-full  ">
-                            <Image
-                                onClick={() => setImgExpand((prev) => !prev)}
-                                width={1920}
-                                height={1080}
-                                src={imgs[currentImg]}
-                                alt={"test"}
-                                className=" cursor-pointer w-full max-h-[70%] object-contain rounded-2xl  "
-                                style={{ transform: "translateZ(20px)" }}
+                            {currentIsVideo ? (
+                                <video
+                                    onClick={() => setImgExpand((prev) => !prev)}
+                                    src={currentUrl}
+                                    className="cursor-pointer w-full max-h-[70%] object-contain rounded-2xl bg-black"
+                                    style={{ transform: "translateZ(20px)" }}
+                                    controls
+                                    autoPlay
+                                    muted
+                                />
+                            ) : (
+                                <Image
+                                    onClick={() => setImgExpand((prev) => !prev)}
+                                    width={1920}
+                                    height={1080}
+                                    src={currentUrl}
+                                    alt={"test"}
+                                    className=" cursor-pointer w-full max-h-[70%] object-contain rounded-2xl  "
+                                    style={{ transform: "translateZ(20px)" }}
 
-                            />
+                                />
+                            )}
                             <div className="flex  gap-4 py-4 mt-4 relative">
                                 <button
                                     onClick={handlePrevScroll}
@@ -117,14 +151,24 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                     <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(1) }}>
                         <FaArrowAltCircleLeft />
                     </button>
-                    <Image
-                        width={1920}
-                        height={1080}
-                        src={imgs[currentImg]}
-                        alt={"test"}
-                        className=" w-full max-h-[90%] object-contain rounded-2xl  "
-                        style={{ transform: "translateZ(20px)" }}
-                    />
+                    {currentIsVideo ? (
+                        <video
+                            src={currentUrl}
+                            className="w-full max-h-[90%] object-contain rounded-2xl bg-black"
+                            style={{ transform: "translateZ(20px)" }}
+                            controls
+                            autoPlay
+                        />
+                    ) : (
+                        <Image
+                            width={1920}
+                            height={1080}
+                            src={currentUrl}
+                            alt={"test"}
+                            className=" w-full max-h-[90%] object-contain rounded-2xl  "
+                            style={{ transform: "translateZ(20px)" }}
+                        />
+                    )}
                     <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(0) }}>
                         <FaArrowAltCircleRight />
                     </button>

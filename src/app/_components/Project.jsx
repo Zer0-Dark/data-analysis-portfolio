@@ -86,15 +86,26 @@ function Project({ title, para, imgs }) {
                         }}
                         className="p-4"
                     >
-                        <Image
-                            width={1920}
-                            height={1080}
-                            src={imgs[0]}
-                            alt={title}
-                            className="w-full max-h-96  h-fit  object-contain rounded lg:mb-12 mb-10 "
-                            style={{ transform: "translateZ(20px)" }}
-
-                        />
+                        {imgs[0].toLowerCase().endsWith('.mp4') ? (
+                            <video
+                                src={imgs[0]}
+                                className="w-full max-h-96 h-fit object-contain rounded lg:mb-12 mb-10 bg-black"
+                                style={{ transform: "translateZ(20px)" }}
+                                muted
+                                autoPlay
+                                loop
+                                playsInline
+                            />
+                        ) : (
+                            <Image
+                                width={1920}
+                                height={1080}
+                                src={imgs[0]}
+                                alt={title}
+                                className="w-full max-h-96  h-fit  object-contain rounded lg:mb-12 mb-10 "
+                                style={{ transform: "translateZ(20px)" }}
+                            />
+                        )}
                         <h1
                             className="lg:text-3xl text-xl capitalize font-bold mb-2 text-brand"
                             style={{ transform: "translateZ(40px)" }}
@@ -129,4 +140,4 @@ function Project({ title, para, imgs }) {
     )
 }
 
-export default Project  
+export default Project
