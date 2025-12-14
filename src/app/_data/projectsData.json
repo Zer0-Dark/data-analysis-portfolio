@@ -19,8 +19,10 @@
         "id": 2,
         "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
         "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4",
             "https://i.postimg.cc/rmmqNPwf/Screenshot-2025-12-10-130954.png",
             "https://i.postimg.cc/W33swH19/Screenshot-2025-12-10-131151.png",
             "https://i.postimg.cc/Y99tzsCP/Screenshot-2025-12-10-131225.png",
@@ -33,8 +35,10 @@
         "id": 3,
         "title": "Abdul Samad Al Qurashi — Sales & Products Analytics Dashboard",
         "para": "Built a full sales analytics solution for Abdul Samad Al Qurashi using data extracted from the official website.Structured the raw data into SQL Server and performed modeling and cleaning in Power BI.Designed interactive dashboards covering sales KPIs, product performance, geographic distribution, and price segments.Created DAX measures for revenue growth, order value, category analysis, and monthly trends.Insights revealed the dominance of perfumes & oud, seasonal revenue drops, and high demand in GCC markets.Delivered a clean, business-focused Power BI dashboard supporting strategic sales decisions.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744101/Sequence_02_1_oi5pds.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744101/Sequence_02_1_oi5pds.mp4",
             "https://i.postimg.cc/j590H4C2/Screenshot-2025-12-07-182549.png",
             "https://i.postimg.cc/DZDkrPmm/Screenshot-2025-12-07-182647.png",
             "https://i.postimg.cc/HxKDw9jV/Screenshot-2025-12-07-182755.png",
@@ -46,8 +50,10 @@
         "id": 4,
         "title": "Toyota Sales & Revenue Intelligence Dashboard – Abdul Latif Jameel Motors (KSA)",
         "para": "This project delivers a full analytics solution for Abdul Latif Jameel Motors using Excel, Python, and Power BI. I cleaned and analyzed the raw data using Pandas and NumPy, and generated exploratory visuals with Matplotlib and Seaborn. The refined dataset was modeled in Power BI, supported with DAX measures and calculated columns. The final output includes three interactive dashboards covering sales performance, revenue analysis, and vehicle model insights. These dashboards present clear KPIs, trends, and comparisons to support data-driven decision-making. The project emphasizes clean design, consistent branding, and a highly interactive user experience.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744212/Sequence_02_ononxg.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744212/Sequence_02_ononxg.mp4",
             "https://i.postimg.cc/mgk3GhFh/Screenshot-2025-12-07-164622.png",
             "https://i.postimg.cc/13X0Z4Nq/Screenshot-2025-12-07-164736.png",
             "https://i.postimg.cc/Z5Q8YZr0/Screenshot-2025-12-07-171936.png",
@@ -61,8 +67,10 @@
         "id": 5,
         "title": "Saudi Arabia Real Estate Market Analysis & Interactive Power BI Dashboard",
         "para": "This project analyzes real real-estate data sourced from the official Saudi government platform, covering multiple cities, regions, property types, and price trends. I performed data cleaning and preparation using Python (pandas, NumPy, regex) and validated key metrics through exploratory visualizations created with Matplotlib and Seaborn. The cleaned dataset was imported into Power BI, where I built a complete analytical data model and developed numerous DAX measures and calculated columns to evaluate a variety of market metrics.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765743971/Sequence_01_3_g6xwma.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765743971/Sequence_01_3_g6xwma.mp4",
             "https://i.postimg.cc/LsvtnKMZ/Screenshot_2025_07_06_033806.png",
             "https://i.postimg.cc/zBBnhtJW/Screenshot_2025_07_06_033917.png",
             "https://i.postimg.cc/xCCKmx0y/Screenshot_2025_07_06_034406.png"
@@ -72,6 +80,8 @@
         "id": 6,
         "title": "Property Management Dashboard — Real Estate Performance & Sales Analysis",
         "para": "This Real Estate Property Management dashboard was built using Excel data and developed entirely in Power BI. The project includes full data cleaning with Power Query, data modeling, and the creation of DAX measures and calculated columns. The dashboard provides key insights into revenue, sales channels, property types, client performance, and country-level distribution. It helps identify top clients, track payment status, and highlight the most profitable properties to support strategic decision-making.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765743907/Sequence_01_2_jstk1o.mp4",
             "https://i.postimg.cc/q71wh3vn/Screenshot_2025_12_10_221627.png",
@@ -82,6 +92,8 @@
         "id": 7,
         "title": "Hotel Booking & Revenue Analytics Dashboard",
         "para": "A full hotel analytics project built using Excel, Python, and Power BI. The data was cleaned and prepared using Pandas & NumPy, with exploratory visuals created using Seaborn and Matplotlib. After modeling the data in Power BI and building DAX measures, four interactive dashboards were developed to analyze revenue, reservations, guest types, room categories, and country-level performance.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765743721/Sequence_01_1_bnh8cl.mp4",
             "https://i.postimg.cc/h4MC0rGW/Screenshot-2025-06-26-165944.png",
@@ -98,6 +110,8 @@
         "id": 8,
         "title": "Blinkit Business Performance Analytics Dashboards",
         "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations. The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765743817/Sequence_01_1_z8dmcz.mp4",
             "https://i.postimg.cc/N0s8LK3M/Screenshot-2025-07-20-170427.png",
@@ -112,8 +126,10 @@
         "id": 9,
         "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
         "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744160/Sequence_02_2_qestsn.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744160/Sequence_02_2_qestsn.mp4",
             "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
             "https://i.postimg.cc/Wb0z0ntg/Screenshot-2025-07-31-154109.png",
             "https://i.postimg.cc/dtG3GBDm/Screenshot-2025-07-31-154404.png"
@@ -123,8 +139,10 @@
         "id": 10,
         "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
         "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744262/Sequence_03_bt9vwt.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744262/Sequence_03_bt9vwt.mp4",
             "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
             "https://i.postimg.cc/mDJC1KvK/Screenshot-2025-09-07-133337.png",
             "https://i.postimg.cc/j5mPnGVV/Screenshot-2025-09-07-133446.png"
@@ -134,8 +152,10 @@
         "id": 11,
         "title": "Health Care Analytics & Interactive Dashboard",
         "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744323/Sequence_04_p1mzf0.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744323/Sequence_04_p1mzf0.mp4",
             "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
             "https://i.postimg.cc/WbB6SX2B/Screenshot-2025-12-04-175854.png",
             "https://i.postimg.cc/2Sndth6K/Screenshot-2025-12-04-180029.png"
@@ -145,8 +165,10 @@
         "id": 12,
         "title": "Pizza Sales Analytics & Interactive BI Dashboards",
         "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744370/Sequence_06_pams3z.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744370/Sequence_06_pams3z.mp4",
             "https://i.postimg.cc/J4jVpYNJ/Screenshot-2025-10-20-155750.png",
             "https://i.postimg.cc/Fs05TCyJ/Screenshot-2025-10-20-155955.png",
             "https://i.postimg.cc/65CJMbrZ/Screenshot-2025-10-20-160024.png",
@@ -157,8 +179,10 @@
         "id": 13,
         "title": "Employee Pay Intelligence Dashboard — Multi-Page Power BI Report",
         "para": "A multi-page Salaries Analysis Dashboard built using Excel, Python (pandas, numpy) for data cleaning, and Power BI for modeling and visualization. The project includes DAX measures, calculated columns, and interactive dashboards analyzing total pay, base pay, overtime, benefits, and job title trends across multiple years.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744739/Sequence_12_sqkicj.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744739/Sequence_12_sqkicj.mp4",
             "https://i.postimg.cc/mr9JCmdc/Screenshot-2025-12-09-112233.png",
             "https://i.postimg.cc/xdmhM6sJ/Screenshot-2025-12-09-112324.png",
             "https://i.postimg.cc/zG64yskH/Screenshot-2025-12-09-112410.png"
@@ -168,8 +192,10 @@
         "id": 14,
         "title": "Wish Clothing Sales Analytics & Interactive Dashboard",
         "para": "This project transforms raw Excel sales data for clothing products sold on Wish into a clean and structured analytical model. Using Python, I performed data cleaning, feature extraction, and exploratory analysis. Power BI was used to build the data model, create calculated columns and DAX measures, and design a dynamic dashboard showcasing sales, profit, product performance, and geographic insights. The results provide actionable business intelligence to improve pricing, stock management, marketing strategy, and product optimization.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744426/Sequence_07_hsvim8.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744426/Sequence_07_hsvim8.mp4",
             "https://i.postimg.cc/G3kh0ZMh/Screenshot-2025-08-27-164821.png",
             "https://i.postimg.cc/SR7yWM2F/Screenshot-2025-08-27-161347.png"
         ]
@@ -178,8 +204,10 @@
         "id": 15,
         "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
         "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality. The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744520/Sequence_08_om5i5c.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744520/Sequence_08_om5i5c.mp4",
             "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png",
             "https://i.postimg.cc/ZKqjRVHW/Screenshot-2025-10-08-153305.png"
         ]
@@ -188,8 +216,10 @@
         "id": 16,
         "title": "Mobile Phones Sales Analytics – Interactive Power BI Dashboard",
         "para": "A comprehensive data analytics project that explores mobile phone sales performance using real marketplace data. The dataset was cleaned and prepared using Python (Pandas & NumPy), followed by advanced data modeling and DAX calculations in Power BI to build three fully-interactive dashboards.The dashboards provide insights into product prices, discounts, offers, sales performance by brand, customer ratings, and business metrics such as Prime products, Amazon’s Choice, and Best-Seller distribution.This project highlights the end-to-end analytics process from raw data → data cleaning → transformation → modeling → visualization → business insights.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744579/Sequence_09_duaj2c.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744579/Sequence_09_duaj2c.mp4",
             "https://i.postimg.cc/8c0rwmP1/Screenshot-2025-12-07-180702.png",
             "https://i.postimg.cc/Xqzyxk7W/Screenshot-2025-12-07-180815.png",
             "https://i.postimg.cc/cCb8TB4d/Screenshot-2025-12-07-181324.png"
@@ -199,8 +229,10 @@
         "id": 17,
         "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
         "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn. After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering territories performance, product insights, and an overall business overview.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744623/Sequence_10_yoenk3.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744623/Sequence_10_yoenk3.mp4",
             "https://i.postimg.cc/65TRhB8q/Screenshot-2025-07-09-170559.png",
             "https://i.postimg.cc/QxDwBnCK/Screenshot-2025-07-09-171045.png",
             "https://i.postimg.cc/xCFy38y3/Screenshot-2025-07-09-165732.png"
@@ -210,8 +242,10 @@
         "id": 18,
         "title": "Auto Sales & Weather Impact Dashboard",
         "para": "A Auto Sales & Weather Impact Data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744674/Sequence_11_rek2fm.mp4"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744674/Sequence_11_rek2fm.mp4",
             "https://i.postimg.cc/8zN3dR30/Screenshot-2025-06-05-113007.png",
             "https://i.postimg.cc/T3fSjVS7/Screenshot-2025-06-05-113037.png",
             "https://i.postimg.cc/52bG5BGP/Screenshot-2025-06-05-113241.png",
