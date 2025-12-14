@@ -8,12 +8,13 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import ProjectPopup from "./ProjectPopup";
+import { FaGithub } from "react-icons/fa";
 const ROTATION_RANGE = 8;
 const HALF_ROTATION_RANGE = 8 / 2;
 
 
 
-function Project({ title, para, imgs }) {
+function Project({ title, para, imgs, github }) {
 
     const handleMouseMove = (e) => {
         if (!ref.current) return [0, 0];
@@ -118,23 +119,33 @@ function Project({ title, para, imgs }) {
                         >
                             {para}
                         </p>
-                        <button
-                            className="px-4 py-2 lg:text-xl bg-brand text-brand-dark font-bold hover:text-white rounded border-2 border-transparent hover:bg-brand-dark hover:border-brand cursor-pointer z-30"
-                            style={{ transform: "translateZ(50px)" }}
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                setShowMoreInfo((value) => !value);
-                            }}
-                        >
-                            See more
-                        </button>
+                        <div className="flex justify-between items-center">
+                            <button
+                                className="px-4 py-2 lg:text-xl bg-brand text-brand-dark font-bold hover:text-white rounded border-2 border-transparent hover:bg-brand-dark hover:border-brand cursor-pointer z-30"
+                                style={{ transform: "translateZ(50px)" }}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setShowMoreInfo((value) => !value);
+                                }}
+                            >
+                                See more
+                            </button>
+
+                            <a
+                                target="_blank"
+                                href={github}
+                                className="text-4xl hover:text-brand">
+                                <FaGithub />
+                            </a>
+                        </div>
+
 
 
                     </div>
                 </motion.div>
             </div>
             {showMoreInfo &&
-                <ProjectPopup handleShow={handleShow} title={title} para={para} imgs={imgs} />
+                <ProjectPopup handleShow={handleShow} title={title} para={para} imgs={imgs} github={github} />
             }
         </>
     )

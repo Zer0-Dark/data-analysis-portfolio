@@ -1,12 +1,13 @@
 import Image from "next/image"
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import {
     FaXingSquare,
     FaArrowAltCircleRight,
     FaArrowAltCircleLeft
 } from "react-icons/fa";
 
-function ProjectPopup({ handleShow, title, para, imgs }) {
+function ProjectPopup({ handleShow, title, para, imgs, github }) {
 
     const [currentImg, setCurrentImg] = useState(0)
     const [scrollIndex, setScrollIndex] = useState(0)
@@ -134,9 +135,16 @@ function ProjectPopup({ handleShow, title, para, imgs }) {
                             </div>
                         </div>
                         {/* right container */}
-                        <div className="lg:w-5/12 overflow-hidden max-h-full text-sm">
+                        <div className="lg:w-5/12 overflow-hidden max-h-full text-sm flex flex-col h-full ">
                             <p className="">{para}</p>
+                            <a
+                                target="_blank"
+                                href={github}
+                                className="text-4xl hover:text-brand w-full flex justify-end mt-auto">
+                                <FaGithub />
+                            </a>
                         </div>
+
                     </div>
                 </div>
             }

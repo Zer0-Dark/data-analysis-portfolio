@@ -21,7 +21,7 @@ function Projects() {
             <SectionTitle title={sections.projects.title} />
             <div className="flex flex-wrap lg:gap-[30px] gap-6  ">
                 {visibleProjects.map((project, idx) => (
-                    <Project key={idx} title={project.title} para={project.para} imgs={project.imgs} />
+                    <Project key={idx} title={project.title} para={project.para} imgs={project.imgs} github={project.github} />
 
                 ))}
             </div>
@@ -29,7 +29,7 @@ function Projects() {
                 <div className="flex justify-center mt-8">
                     <button
                         onClick={handleLoadMore}
-                        className="px-6 py-3 bg-purple-600 font-bold text-2xl cursor-pointer text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors">
+                        className="px-6 py-3 bg-purple-600 font-bold text-2xl cursor-pointer text-white rounded-lg hover:bg-purple-700 transition-colors">
                         Load More
                     </button>
                 </div>
