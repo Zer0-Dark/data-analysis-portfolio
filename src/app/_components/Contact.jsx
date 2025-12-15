@@ -29,24 +29,25 @@ function Contact() {
         {contactData.map((contact) => {
           const IconComponent = iconMap[contact.icon];
           return (
-            <div
-              key={contact.id}
-              className="flex gap-5 items-center flex-shrink-0"
-            >
-              <a
-                href={contact.href}
-                className="rounded-full p-3 flex-shrink-0"
-                style={{
-                  background:
-                    "linear-gradient(161deg, #1f1238 0%, #8750F7 100%)",
-                }}
+            <a href={contact.href}>
+              <div
+                key={contact.id}
+                className="flex gap-5 items-center flex-shrink-0"
               >
-                {IconComponent && <IconComponent />}
-              </a>
-              <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
-                {contact.label}
-              </h2>
-            </div>
+                <a
+                  className="rounded-full p-3 flex-shrink-0"
+                  style={{
+                    background:
+                      "linear-gradient(161deg, #1f1238 0%, #8750F7 100%)",
+                  }}
+                >
+                  {IconComponent && <IconComponent />}
+                </a>
+                <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
+                  {contact.label}
+                </h2>
+              </div>
+            </a>
           );
         })}
       </div>
