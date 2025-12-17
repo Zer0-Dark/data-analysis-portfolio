@@ -29,12 +29,14 @@ function Contact() {
         {contactData.map((contact) => {
           const IconComponent = iconMap[contact.icon];
           return (
-            <a href={contact.href}>
+            <a href={contact.href}
+              key={contact.id}
+
+            >
               <div
-                key={contact.id}
                 className="flex gap-5 items-center flex-shrink-0"
               >
-                <a
+                <div
                   className="rounded-full p-3 flex-shrink-0"
                   style={{
                     background:
@@ -42,7 +44,7 @@ function Contact() {
                   }}
                 >
                   {IconComponent && <IconComponent />}
-                </a>
+                </div>
                 <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
                   {contact.label}
                 </h2>

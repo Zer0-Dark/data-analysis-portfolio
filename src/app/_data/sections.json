@@ -22,12 +22,12 @@
                 "icon": "/power_bi.svg"
             },
             {
-                "name": "Tableau",
-                "icon": "/tablu.png"
-            },
-            {
                 "name": "Python",
                 "icon": "/python.png"
+            },
+            {
+                "name": "Tableau",
+                "icon": "/tablu.png"
             },
             {
                 "name": "SQL",

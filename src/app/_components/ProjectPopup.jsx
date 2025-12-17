@@ -143,6 +143,7 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
                                 className="text-4xl hover:text-brand w-full flex justify-end mt-auto">
                                 <FaGithub />
                             </a>
+
                         </div>
 
                     </div>
