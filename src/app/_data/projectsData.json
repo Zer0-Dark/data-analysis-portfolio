@@ -238,8 +238,26 @@
             "https://i.postimg.cc/xCFy38y3/Screenshot-2025-07-09-165732.png"
         ]
     },
-    {
+      {
         "id": 18,
+        "title": "Construction Project Financial & Operations Dashboards – FAM Interior (Sample Work)",
+        "para": "These dashboards are sample visuals from my work at FAM Interior, created to support project finance, operations, and management reporting.They focus on tracking revenue, costs, budgets, and cash flow across multiple construction projects.The dashboards provide visibility into owner billing, subcontractor payments, and approved pay applications.Key KPIs highlight financial performance, variances, and supplier-to-owner ratios.Interactive filters allow analysis by project, company, date, and operational stage.Detailed tables enable drill-down from portfolio level to individual project and invoice level.Monthly trends help monitor payment progress and operational cost movements.This is a simplified sample shared as proof of experience, not the full scope of delivered work.",
+        "github": "https://www.google.com",
+        "subPara": "hrssfg",
+        "imgs": [
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1766336344/Sequence_01_4_fqniz5.mp4",
+            "https://i.postimg.cc/kGf33B2b/Screenshot_2025_12_12_004509.png",
+            "https://i.postimg.cc/gjNFFnxx/Screenshot_2025_12_12_004613.png",
+            "https://i.postimg.cc/2y2RRV1y/Screenshot_2025_12_12_004715.png",
+            "https://i.postimg.cc/yxv44kDN/Screenshot_2025_12_12_004742.png",
+            "https://i.postimg.cc/QC0GGHFg/Screenshot_2025_12_12_004759.png",
+            "https://i.postimg.cc/FzD557Yp/Screenshot_2025_12_12_004850.png",
+            "https://i.postimg.cc/qBLdCZ1r/Screenshot_2025_12_12_004907.png",
+            "https://i.postimg.cc/Pf4k8FSx/Screenshot_2025_12_12_005925.png"
+        ]
+    },
+    {
+        "id": 19,
         "title": "Auto Sales & Weather Impact Dashboard",
         "para": "A Auto Sales & Weather Impact Data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
         "github": "https://www.google.com",
