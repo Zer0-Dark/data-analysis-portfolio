@@ -10,7 +10,7 @@ function SectionTitle({ title }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="lg:text-7xl text-5xl font-extrabold uppercase tracking-wider leading-none mb-6 inline-flex gap-4"
+                className="lg:text-7xl text-5xl font-extrabold uppercase tracking-wider leading-none mb-6 pb-3 inline-flex gap-4"
                 style={{
                     background: "linear-gradient(to right, #8750F7 0%, #FFFFFF 100%)",
                     WebkitBackgroundClip: "text",

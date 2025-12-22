@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import {
     FaXingSquare,
@@ -9,10 +9,21 @@ import {
 
 function ProjectPopup({ handleShow, title, para, imgs, github }) {
 
-    const [currentImg, setCurrentImg] = useState(0)
-    const [scrollIndex, setScrollIndex] = useState(0)
-    const [imgExpand, setImgExpand] = useState(false)
-    const visibleThumbnails = 5
+    const [currentImg, setCurrentImg] = useState(0);
+    const [scrollIndex, setScrollIndex] = useState(0);
+    const [imgExpand, setImgExpand] = useState(false);
+    const [visibleThumbnails, setVisibleThumbnails] = useState(4);
+    useEffect(() => {
+        console.log(window.innerWidth)
+        if (window.innerWidth > 600) {
+            console.log(4);
+            setVisibleThumbnails(4)
+        } else {
+            setVisibleThumbnails(2)
+
+        }
+    }, [])
+
 
     function handleBigImgButton(dir) {
         if (dir === 0) {
@@ -91,7 +102,7 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
                     <div className="w-full max-h-[30%]">
                         <h1 className="lg:mt-12 mt-10 lg:mb-16 mb-4 p-4 lg:mr-12 lg:text-4xl text-base font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
                     </div>
-                    <div className="flex lg:flex-row flex-col  lg:justify-between lg:items-start items-center lg:gap-12 gap-3 lg:h-[70%] pb-8">
+                    <div className="flex w-full lg:flex-row flex-col   lg:justify-between lg:items-start items-center lg:gap-12 gap-3 lg:h-[70%] pb-8">
                         {/* left container */}
                         <div className="lg:w-7/12 flex flex-col justify-between lg:h-full  ">
                             {currentIsVideo ? (
@@ -116,14 +127,14 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
 
                                 />
                             )}
-                            <div className="flex  gap-4 py-4 mt-4 relative">
+                            <div className="flex  gap-4 py-4 mt-4 relative ">
                                 <button
                                     onClick={handlePrevScroll}
                                     disabled={scrollIndex === 0}
                                     className="absolute cursor-pointer z-50 left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
                                     <FaArrowAltCircleLeft />
                                 </button>
-                                <div className="flex w-full gap-4 px-12 overflow-hidden justify-center items-center ">
+                                <div className="flex w-full gap-4 px-24 overflow-hidden justify-center items-center ">
                                     {imgsContainer}
                                 </div>
                                 <button
@@ -135,8 +146,8 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
                             </div>
                         </div>
                         {/* right container */}
-                        <div className="lg:w-5/12 overflow-hidden max-h-full text-sm flex flex-col h-full ">
-                            <p className="">{para}</p>
+                        <div className="lg:w-5/12  overflow-hidden max-h-full text-sm flex flex-col h-full ">
+                            <p className="">{para} fdsasfdkmdkafsjfjldkaslkkf asfklkasdflk;dasflk;</p>
                             <a
                                 target="_blank"
                                 href={github}
@@ -152,18 +163,18 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
 
             {
                 imgExpand &&
-                <div className=" absolute gap-6  flex  items-center justify-center h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
+                <div className=" absolute gap-1  flex  items-center justify-center h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
 
                     <button onClick={() => setImgExpand((prev) => !prev)} className=" absolute text-6xl top-6 right-6 cursor-pointer">
                         <FaXingSquare />
                     </button>
-                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(1) }}>
+                    <button className="text-5xl text-brand rounded-xl ml-4 p-2 cursor-pointer" onClick={() => { handleBigImgButton(1) }}>
                         <FaArrowAltCircleLeft />
                     </button>
                     {currentIsVideo ? (
                         <video
                             src={currentUrl}
-                            className="w-full max-h-[90%] object-contain rounded-2xl bg-black"
+                            className="w-full max-h-[90%] object-contain rounded-2xl bg-black p-4"
                             style={{ transform: "translateZ(20px)" }}
                             controls
                             autoPlay
@@ -178,7 +189,7 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
                             style={{ transform: "translateZ(20px)" }}
                         />
                     )}
-                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer" onClick={() => { handleBigImgButton(0) }}>
+                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer mr-4" onClick={() => { handleBigImgButton(0) }}>
                         <FaArrowAltCircleRight />
                     </button>
                 </div>

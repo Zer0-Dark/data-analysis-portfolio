@@ -1,9 +1,19 @@
+'use client';
 import Image from "next/image"
 import { FaDownload } from "react-icons/fa"
 import data from "../_data/sections.json"
+import {
+    motion,
+    useMotionTemplate,
+    useMotionValue,
+    useSpring,
+} from "motion/react";
+import { useState } from "react";
 
 function NewHero() {
     const { hero, skills } = data
+    const [hoverd, setHoverd] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <div className=" w-full h-screen flex flex-col px-12   ">
@@ -48,7 +58,14 @@ function NewHero() {
                 <div className="w-full md:w-1/4 relative hidden md:block">
                     <div className=" absolute top-[30%] -left-48 flex flex-row-reverse flex-wrap gap-12  w-92  ">
                         {skills.items.slice(0, 3).map((skill, index) => (
-                            <div key={index} className="w-28 h-28 bg-brand-semi-dark rounded-xl border-2 border-brand flex justify-center items-center">
+                            <motion.div
+                                initial={{ scale: 0.9 }}
+                                animate={{ scale: 1 }}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                onHoverStart={() => setHoveredIndex(index)} // Set the specific index
+                                onHoverEnd={() => setHoveredIndex(null)}    // Reset to null
+                                key={index} className="w-28 h-28 bg-brand-semi-dark rounded-xl border-2 border-brand flex justify-center items-center">
                                 <Image
                                     style={{ transform: "translateZ(50px)" }}
                                     src={skill.icon}
@@ -56,7 +73,12 @@ function NewHero() {
                                     width={index === 2 ? 80 : 100}
                                     height={50}
                                 />
-                            </div>
+                                {hoveredIndex === index && (
+                                    <div className="absolute -bottom-10 bg-black text-white px-2 py-1 rounded-xl ">
+                                        {skill.name}
+                                    </div>
+                                )}
+                            </motion.div>
                         ))}
                     </div>
                 </div>
