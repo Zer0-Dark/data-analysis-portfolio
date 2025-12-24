@@ -3,8 +3,8 @@
         "id": 1,
         "title": "Supply Chain Performance & Sales Intelligence Dashboard",
         "para": "This project delivers a full analytical experience for supply chain and commercial performance. Using Excel datasets cleaned through Power Query and modeled in Power BI, the dashboard uncovers sales patterns, order behavior across regions, and product performance metrics—including dynamic KPI visuals and an animated globe for geographic insights. It highlights end-to-end BI development skills including ETL, data modeling, DAX, and dashboard storytelling.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Supply-Chain-Dashboard",
+        "subPara": "Power BI, and DAX.All raw data was sourced from Excel files and transformed using Power Query, where data cleaning, standardization, and conditional columns were applied to prepare the dataset for analysis.The Power BI data model was designed following best practices, with fact and dimension tables connected through a structured schema to ensure accurate analysis and high performance.Custom DAX measures and calculated columns were developed to calculate key business KPIs such as Total Sales, Total Revenue, Profit, Order Volume, Growth Trends, Truck Utilization, and Product Performance metrics.The dashboard consists of multiple analytical pages, each designed to answer specific business questions:Sales Overview provides high-level KPIs, market trends, category performance, and a dynamic truck utilization visual that responds to filters.Orders Analysis Overview focuses on order distribution across regions, countries, and years, using an interactive 3D globe and comparison charts.Sales Analysis delivers detailed insights into sales trends by region and compares total revenue and profit across payment types.Top Products Performance Summary highlights the top three performing products (Cleats, Women’s Apparel, Indoor/Outdoor Games), with in-depth metrics including produced vs. sold quantities, revenue, available stock, and average defect rates.This project demonstrates strong capabilities in data preparation, analytical modeling, DAX development, and storytelling through interactive visualizations, making it suitable for operational monitoring and strategic decision-making.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765743506/Pbidesktop_W8lnggbc7c_1_kptzak.mp4",
             "https://i.postimg.cc/nr9dGD1H/Screenshot-2025-12-03-113947.png",
@@ -271,3 +271,4 @@
         ]
     }
 ]
+
