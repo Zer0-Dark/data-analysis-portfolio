@@ -139,8 +139,8 @@
         "id": 10,
         "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
         "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Uber-Dashboard",
+        "subPara": "This project presents an end-to-end data analytics solution for Uber trip data using Excel and Power BI.The dataset was originally provided across multiple Excel files, which required consolidation, cleaning, and transformation before analysis.Using Power Query, I performed the full ETL process, including merging files, handling missing values, correcting data types, standardizing date and time formats, and creating derived columns such as pickup hour, day name, trip type (day/night), passenger group, and distance categories.After preparing the data, I designed an optimized data model in Power BI and created multiple DAX measures and calculated columns to track key performance indicators such as Total Bookings, Total Booking Amount, Average Booking Value, Total Trip Distance, Average Trip Duration, and time-based metrics.The project delivers three interactive dashboards:Overview Dashboard: Provides high-level KPIs and insights into booking trends, payment methods, trip types, vehicle performance, and top pickup/drop-off locations.Time Analysis Dashboard: Focuses on temporal patterns using hourly trends, weekday analysis, heatmaps, and pickup time distributions to identify peak demand periods.Trip Details Dashboard: Offers a detailed, row-level view of individual trips, enabling drill-down analysis and validation.This dashboard-driven analysis helps uncover demand patterns, customer behavior, and operational insights that can support decision-making related to fleet allocation, pricing strategy, and service optimization.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744262/Sequence_03_bt9vwt.mp4",
             "https://i.postimg.cc/V6pn02xx/Screenshot-2025-09-07-133216.png",
@@ -152,8 +152,8 @@
         "id": 11,
         "title": "Health Care Analytics & Interactive Dashboard",
         "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Health-Care-Dashboard",
+        "subPara": "Health Care Data Analytics Project focused on analyzing medical, financial, and operational healthcare data using Excel, Python, and Power BI.The project started with multiple Excel files, where data was cleaned, transformed, and prepared using Python (Pandas & NumPy). Exploratory analysis and visualizations were created using Seaborn and Matplotlib to understand cost distribution, patient demographics, visit types, and department performance.The prepared data was then loaded into Power BI, where a structured data model was built along with DAX measures and calculated columns to track key KPIs such as billing, treatment and medication costs, insurance coverage, out-of-pocket expenses, patient visits, and doctor performance.The final output is a set of three interactive dashboards (Overview, Patients, and Doctors) that provide insights into healthcare operations, patient behavior, and clinical performance, enabling data-driven decision-making.The solution highlights trends, identifies cost drivers, and helps stakeholders monitor performance across departments, services, and time periods.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744323/Sequence_04_p1mzf0.mp4",
             "https://i.postimg.cc/x1LGZMCp/Screenshot-2025-12-04-175727.png",
@@ -260,8 +260,8 @@
         "id": 19,
         "title": "Auto Sales & Weather Impact Dashboard",
         "para": "A Auto Sales & Weather Impact Data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Cars_Sales_Dashboard",
+        "subPara": "This project is a comprehensive data analytics solution built around four interactive Power BI dashboards that analyze sales performance, weather conditions, and vehicle system recalls. The main objective of the project is to understand how sales trends, regional behavior, and environmental factors such as temperature, wind speed, humidity, and visibility influence sales performance and recall patterns.The data sources for this project were provided as multiple Excel files. These files were consolidated, cleaned, and transformed using Python, primarily leveraging the Pandas and NumPy libraries. During this stage, missing values, inconsistent formats, and duplicated records were handled to ensure data quality and reliability.Before loading the data into Power BI, exploratory data analysis (EDA) was performed using Matplotlib and Seaborn. This step helped in understanding relationships between variables, identifying trends, seasonality, and anomalies, and validating key assumptions related to sales and weather indicators.The cleaned dataset was then imported into Power BI, where a structured data model was designed using proper relationships between fact and dimension tables. Advanced DAX measures and calculated columns were created to compute key performance indicators such as total profit, quantity sold, average profit per sale, monthly and quarterly trends, and system-level recall metrics.The final outcome consists of four well-designed dashboards:A Sales Overview Dashboard that highlights overall sales, profit trends, and performance by model and city.A Weather Indicators Dashboard that monitors temperature, wind speed, humidity, visibility, and weather conditions over time.A Key Influencers Dashboard that identifies the most influential factors behind recalls and system failures.A Geographical & Recall Analysis Dashboard that visualizes regional performance and affected vehicle systems across different locations.Overall, this project demonstrates an end-to-end data analytics workflow, starting from raw Excel data, moving through Python-based data cleaning and analysis, and ending with professional, insight-driven Power BI dashboards that support data-driven decision-making.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744674/Sequence_11_rek2fm.mp4",
             "https://i.postimg.cc/8zN3dR30/Screenshot-2025-06-05-113007.png",
@@ -271,5 +271,6 @@
         ]
     }
 ]
+
 
 
