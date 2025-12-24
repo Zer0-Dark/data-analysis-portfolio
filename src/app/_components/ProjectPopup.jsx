@@ -1,22 +1,24 @@
 import Image from "next/image"
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import {
     FaXingSquare,
     FaArrowAltCircleRight,
     FaArrowAltCircleLeft
 } from "react-icons/fa";
 
-function ProjectPopup({ handleShow, title, para, imgs, github }) {
+function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
+
 
     const [currentImg, setCurrentImg] = useState(0);
     const [scrollIndex, setScrollIndex] = useState(0);
     const [imgExpand, setImgExpand] = useState(false);
     const [visibleThumbnails, setVisibleThumbnails] = useState(4);
     useEffect(() => {
-        console.log(window.innerWidth)
         if (window.innerWidth > 600) {
-            console.log(4);
+
             setVisibleThumbnails(4)
         } else {
             setVisibleThumbnails(2)
@@ -147,7 +149,7 @@ function ProjectPopup({ handleShow, title, para, imgs, github }) {
                         </div>
                         {/* right container */}
                         <div className="lg:w-5/12  overflow-hidden max-h-full text-sm flex flex-col h-full ">
-                            <p className="">{para} fdsasfdkmdkafsjfjldkaslkkf asfklkasdflk;dasflk;</p>
+                            <p className="">{para}</p>
                             <a
                                 target="_blank"
                                 href={github}

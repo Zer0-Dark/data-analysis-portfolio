@@ -21,7 +21,7 @@ function Projects() {
             <SectionTitle title={sections.projects.title} />
             <div className="flex flex-wrap lg:gap-[30px] gap-6  ">
                 {visibleProjects.map((project, idx) => (
-                    <Project key={idx} title={project.title} para={project.para} insidePara={project.subPara} imgs={project.imgs} github={project.github} />
+                    <Project key={idx} title={project.title} para={project.para} insidePara={project.subPara} imgs={project.imgs} github={project.github} code={project.code} />
 
                 ))}
             </div>

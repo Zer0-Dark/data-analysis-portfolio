@@ -14,7 +14,8 @@ const HALF_ROTATION_RANGE = 8 / 2;
 
 
 
-function Project({ title, para, imgs, github, insidePara }) {
+function Project({ title, para, imgs, github, insidePara, code }) {
+
 
     const handleMouseMove = (e) => {
         if (!ref.current) return [0, 0];
@@ -145,7 +146,7 @@ function Project({ title, para, imgs, github, insidePara }) {
                 </motion.div>
             </div>
             {showMoreInfo &&
-                <ProjectPopup handleShow={handleShow} title={title} para={insidePara} imgs={imgs} github={github} />
+                <ProjectPopup handleShow={handleShow} title={title} para={insidePara} imgs={imgs} github={github} code={code} />
             }
         </>
     )
