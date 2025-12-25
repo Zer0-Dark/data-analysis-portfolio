@@ -67,8 +67,8 @@
         "id": 5,
         "title": "Saudi Arabia Real Estate Market Analysis & Interactive Power BI Dashboard",
         "para": "This project analyzes real real-estate data sourced from the official Saudi government platform, covering multiple cities, regions, property types, and price trends. I performed data cleaning and preparation using Python (pandas, NumPy, regex) and validated key metrics through exploratory visualizations created with Matplotlib and Seaborn. The cleaned dataset was imported into Power BI, where I built a complete analytical data model and developed numerous DAX measures and calculated columns to evaluate a variety of market metrics.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Saudi-Arabia-Real-Estate-Market-Analysis-Interactive-Power-BI-Dashboard",
+        "subPara": "Saudi Arabia Real Estate Market Trends & Price AnalyticsThis project provides an analytical overview of the Saudi Arabian real estate market using official data published by the Saudi government. The dataset includes detailed information on property transactions, prices, locations, property types, and historical trends across multiple regions and cities.Data processing and transformation were conducted using Python, leveraging pandas and NumPy to clean, validate, and structure the raw Excel files. Exploratory analysis using Matplotlib and Seaborn was applied to examine price distributions, regional disparities, and market behavior over time, ensuring data consistency prior to visualization.A comprehensive analytical model was built in Power BI, where DAX measures and calculated columns were designed to support multi-dimensional analysis. The dashboards enable deep exploration of transaction values, rental versus sales markets, average price per square meter, quarterly and yearly trends, regional and city-level comparisons, and neighborhood price extremes.Custom DAX logic allowed the identification of high-growth regions, price fluctuations across different time periods, and contrasts between rental and ownership markets. Geographic visualizations further enhanced the analysis by highlighting spatial patterns within the real estate market.The final output delivers market intelligence insights that can support investment evaluation, market monitoring, and strategic planning within the Saudi real estate sector.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765743971/Sequence_01_3_g6xwma.mp4",
             "https://i.postimg.cc/LsvtnKMZ/Screenshot_2025_07_06_033806.png",
@@ -126,8 +126,8 @@
         "id": 9,
         "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
         "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/E-Commerce_Dashbaord",
+        "subPara": "This project delivers a comprehensive sales and product analytics solution for the Wish e-commerce platform, which specializes in online clothing retail. The data was originally provided in multiple raw Excel files containing sales transactions, product details, and customer-related information.Python was used to clean, preprocess, and transform the data using libraries such as pandas, regex (re), and numerical operations to handle missing values, duplicates, inconsistent formats, and unstructured product descriptions. After cleaning, the data was prepared and loaded into Power BI for advanced analysis and visualization.Inside Power BI, a structured data model was designed with calculated columns and DAX measures to ensure accurate reporting and efficient performance. Interactive dashboards were developed to analyze sales and profitability by country, product category, color, size, shipping method, and advertising status.Custom DAX measures were created to calculate total sales, total profit, cost value, average profit margin, units sold, and product performance metrics. The analysis revealed key insights such as top-performing products, best-selling sizes and colors, regional sales patterns, and products with negative or low profit margins.The final dashboards provide actionable business insights that support data-driven decisions related to pricing strategy, inventory optimization, marketing focus, and overall sales performance improvement.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744160/Sequence_02_2_qestsn.mp4",
             "https://i.postimg.cc/yY0x0PW0/Screenshot-2025-07-31-153607.png",
@@ -204,8 +204,8 @@
         "id": 15,
         "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
         "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality. The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/ZARA-Sales-Performance-Analysis-Interactive-Power-BI-Dashboard/tree/mainq",
+        "subPara": "ZARA Retail Sales & Product Performance Analysis This project focuses on analyzing retail sales and product performance for ZARA, with an emphasis on understanding customer demand, product placement, and promotional effectiveness. The data was initially collected in multiple Excel files containing information about products, prices, quantities sold, store sections, and promotional status.The data preparation phase was carried out using Python, where pandas and NumPy were applied to clean, standardize, and organize the dataset. Data issues such as missing values, duplicated records, and inconsistent formats were resolved. To better understand sales behavior and validate patterns, exploratory visual analysis was performed using Matplotlib and Seaborn before moving to the BI layer.In Power BI, a structured data model was developed, supported by calculated columns and DAX measures to enable accurate KPI tracking. The interactive dashboard allows users to explore revenue, quantity sold, average prices, category performance, sales by gender section, product placement impact (aisle, end-cap, front of store), and promotion-driven sales behavior.Advanced DAX calculations were used to derive key metrics and performance indicators, revealing insights such as top-selling items, high-performing categories, the effect of promotions on sales volume, and how product positioning influences overall performance.The final dashboard provides clear operational and merchandising insights, helping stakeholders optimize pricing strategies, promotional planning, and in-store product placement decisions.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744520/Sequence_08_om5i5c.mp4",
             "https://i.postimg.cc/4N3wdBP7/Screenshot-2025-10-08-153238.png",
@@ -229,8 +229,8 @@
         "id": 17,
         "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
         "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn. After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering territories performance, product insights, and an overall business overview.",
-        "github": "https://www.google.com",
-        "subPara": "hrssfg",
+        "github": "https://github.com/M-Elzayat/Bikes-Sales-Dashboard",
+        "subPara": "This project provides a full sales analytics solution for a Bikes retail business, covering the entire data lifecycle from raw files to interactive dashboards. The data was originally stored in multiple Excel files and was consolidated and prepared using Python. Data cleaning and transformation were performed using Pandas and NumPy, while Matplotlib and Seaborn were used for exploratory analysis and visual inspection of trends and relationships.After preprocessing, the data was imported into Power BI, where a well-structured data model was created with clear relationships between tables to ensure reliable analysis and optimal performance. Advanced DAX measures and calculated columns were developed to compute key metrics such as total revenue, profit, order volume, quantity sold, and returns.A set of three interactive dashboards was designed to analyze business performance from different perspectives, including territories analysis, product and category performance, customer behavior, and time-based trends. The analysis highlighted top-performing markets, high-demand product categories, sales seasonality, and return patterns across regions. The final dashboards deliver clear and actionable insights that support data-driven decision-making in sales optimization, market expansion, and operational planning.",
         "imgs": [
             "https://res.cloudinary.com/dusfogui1/video/upload/v1765744623/Sequence_10_yoenk3.mp4",
             "https://i.postimg.cc/65TRhB8q/Screenshot-2025-07-09-170559.png",
@@ -271,6 +271,7 @@
         ]
     }
 ]
+
 
 
 
