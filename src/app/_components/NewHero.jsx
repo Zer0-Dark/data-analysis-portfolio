@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image"
-import { FaDownload } from "react-icons/fa"
+import { FaDownload, FaBars, FaTimes } from "react-icons/fa"
 import data from "../_data/sections.json"
 import {
     motion,
@@ -14,14 +14,27 @@ function NewHero() {
     const { hero, skills } = data
     const [hoverd, setHoverd] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className=" w-full h-screen flex flex-col lg:px-12 px-8   ">
-            <div className="w-full mb-4 pt-6  flex justify-between  ">
-                <div className="flex lg:gap-5 gap-2 lg:text-xl text-sm [&>a]:bg-brand-semi-dark [&>a]:flex [&>a]:justify-center [&>a]:items-center [&>a]:lg:px-4 [&>a]:px-2 [&>a]:lg:py-2 [&>a]:rounded-xl [&>a]:hover:bg-brand [&>a]:hover:text-black [&>a]:font-bold [&>a]:transition-all [&>a]:duration-300">
+            <div className="w-full mb-4 pt-6  flex justify-between relative">
+                <div className="hidden md:flex lg:gap-5 gap-2 lg:text-xl text-sm [&>a]:bg-brand-semi-dark [&>a]:flex [&>a]:justify-center [&>a]:items-center [&>a]:lg:px-4 [&>a]:px-2 [&>a]:lg:py-2 [&>a]:rounded-xl [&>a]:hover:bg-brand [&>a]:hover:text-black [&>a]:font-bold [&>a]:transition-all [&>a]:duration-300">
                     <a href="#projects">Projects</a>
                     <a href="#certificates">Certifecates</a>
                     <a href="#contact">Contact Me</a>
+                </div>
+                <div className="md:hidden flex items-center">
+                    <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu" className="p-2 bg-brand-semi-dark rounded-xl flex items-center justify-center cursor-pointer">
+                        {isOpen ? <FaTimes /> : <FaBars />}
+                    </button>
+                    {isOpen && (
+                        <div className="absolute left-4 top-16 w-44 bg-brand-semi-dark rounded-xl p-3 flex flex-col gap-2 z-50">
+                            <a href="#projects" onClick={() => setIsOpen(false)} className="flex justify-center items-center px-4 py-2 rounded-xl hover:bg-brand hover:text-black font-bold transition-all duration-300">Projects</a>
+                            <a href="#certificates" onClick={() => setIsOpen(false)} className="flex justify-center items-center px-4 py-2 rounded-xl hover:bg-brand hover:text-black font-bold transition-all duration-300">Certifecates</a>
+                            <a href="#contact" onClick={() => setIsOpen(false)} className="flex justify-center items-center px-4 py-2 rounded-xl hover:bg-brand hover:text-black font-bold transition-all duration-300">Contact Me</a>
+                        </div>
+                    )}
                 </div>
                 <div>
                     <a href={hero.cvLink}>
