@@ -149,7 +149,9 @@ function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
                         </div>
                         {/* right container */}
                         <div className="lg:w-5/12  overflow-hidden max-h-full text-sm flex flex-col h-full ">
-                            <p className="">{para}</p>
+                            <p className="max-h-[90%] overflow-y-scroll overflow-x-hidden custom-scrollbar">
+                                {para}
+                            </p>
                             <a
                                 target="_blank"
                                 href={github}

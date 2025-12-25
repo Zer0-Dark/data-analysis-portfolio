@@ -17,7 +17,7 @@ function Projects() {
     };
 
     return (
-        <div className="lg:px-42 px-8 ">
+        <div className="lg:px-42 px-8 " id="projects">
             <SectionTitle title={sections.projects.title} />
             <div className="flex flex-wrap lg:gap-[30px] gap-6  ">
                 {visibleProjects.map((project, idx) => (

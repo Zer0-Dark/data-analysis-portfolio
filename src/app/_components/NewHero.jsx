@@ -16,14 +16,16 @@ function NewHero() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className=" w-full h-screen flex flex-col px-12   ">
+        <div className=" w-full h-screen flex flex-col lg:px-12 px-8   ">
             <div className="w-full mb-4 pt-6  flex justify-between  ">
-                <div>
-
+                <div className="flex lg:gap-5 gap-2 lg:text-xl text-sm [&>a]:bg-brand-semi-dark [&>a]:flex [&>a]:justify-center [&>a]:items-center [&>a]:lg:px-4 [&>a]:px-2 [&>a]:lg:py-2 [&>a]:rounded-xl [&>a]:hover:bg-brand [&>a]:hover:text-black [&>a]:font-bold [&>a]:transition-all [&>a]:duration-300">
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certifecates</a>
+                    <a href="#contact">Contact Me</a>
                 </div>
                 <div>
                     <a href={hero.cvLink}>
-                        <button className="text-xl bg-brand-semi-dark py-2 px-4 font-bold  rounded border-2 border-brand cursor-pointer hover:bg-brand hover:text-black flex gap-2 items-center">
+                        <button className="text-xl bg-brand-semi-dark py-2 px-4 font-bold  rounded border-2 border-brand cursor-pointer hover:bg-brand hover:text-black flex gap-2 items-center transition-all duration-300">
                             Download Cv
                             <FaDownload />
                         </button>

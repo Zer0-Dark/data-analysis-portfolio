@@ -18,7 +18,7 @@ function Certifcates() {
 
     return (
         <div
-            className="lg:px-42 px-8 ">
+            className="lg:px-42 px-8 " id="certificates">
             <SectionTitle title={sections.certificates.title} />
             <div className="flex flex-wrap gap-6 justify-center items-center ">
                 {visibleCertificates.map((c) => (

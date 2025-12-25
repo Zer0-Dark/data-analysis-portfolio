@@ -20,7 +20,7 @@ const iconMap = {
 
 function Contact() {
   return (
-    <div className="lg:px-42 px-8 ">
+    <div className="lg:px-42 px-8 " id="contact">
       <SectionTitle title={sections.contact.title} />
       {/* <div className='w-1/2 '>
                     <Image alt='cv' src={'/cv.png'} width={1200} height={900} className='w-3/4 border-5 rounded-xl border-brand'></Image>
