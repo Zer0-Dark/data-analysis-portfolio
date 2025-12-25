@@ -6,8 +6,7 @@
         "cvLink": "/cv.pdf",
         "heroImage": "/tt.png",
         "subDescription": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim harum maxime illum sequi iste suscipit eveniet eum, velit, nemo soluta quod eius totam! Minus in reprehenderit harum totam debitis.",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim harum maxime illum sequi iste suscipit eveniet eum, velit, nemo soluta quod eius totam! Minus in reprehenderit harum totam debitis."
+            ""
         ]
     },
     "skills": {
@@ -47,4 +46,5 @@
         "title": "Contact Me",
         "intro": "Get in touch via phone, email, or social networks."
     }
+
 }
