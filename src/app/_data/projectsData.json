@@ -17,18 +17,16 @@
     },
     {
         "id": 2,
-        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
-        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
-        "github": "https://github.com/M-Elzayat/HR-Dashboard",
-        "subPara": "This comprehensive HR Analytics project delivers a full end-to-end analysis of workforce data across multiple business dimensions, including employee demographics, job levels, departments, locations, compensation, performance, and workforce dynamics.The project began with raw data provided across multiple Excel files. These files were consolidated, cleaned, and transformed using Python, leveraging Pandas and NumPy to handle missing values, standardize data formats, create derived features, and ensure overall data quality. During this stage, exploratory data analysis was conducted using Matplotlib and Seaborn to identify patterns, correlations, and potential business signals.After data preparation, the cleaned dataset was imported into Power BI, where a robust data model was built by defining relationships between fact and dimension tables. Advanced DAX measures and calculated columns were created to calculate key HR metrics such as headcount, average income, performance scores, attrition indicators, workforce distribution, and departmental KPIs.The final output consists of five interactive Power BI dashboards, each designed to address a specific business perspective:Workforce OverviewDepartment & Job Level AnalysisCompensation & Performance InsightsGeographic & Travel AnalysisWorkforce Trends & Attrition AnalysisThese dashboards enable stakeholders to explore workforce patterns, identify operational strengths and risks, compare departments and locations, and support data-driven decision-making related to talent management, compensation planning, and organizational strategy.This project demonstrates strong capabilities in data cleaning, analytical thinking, data modeling, DAX development, and professional dashboard design aligned with real business use cases.",
+        "title": "Energy Global Enhanced: Data-Driven Insights into Energy Consumption & Carbon Emissions Dashboard",
+        "para": "Energy Global Enhanced is a comprehensive data analytics project that explores global energy consumption patterns and their impact on carbon emissions.The project analyzes multiple energy sources, including fossil fuels, oil & gas, electricity, renewables, and nuclear energy.Interactive dashboards highlight carbon intensity, clean energy scores, and emission trends across countries and years.Advanced KPIs are used to measure sustainability performance and energy efficiency.The project demonstrates how energy mix decisions influence environmental outcomes.Dynamic visuals allow users to compare scenarios based on energy type selection.This analysis supports data-driven decision-making for sustainable energy strategies.",
+        "github": "https://github.com/M-Elzayat",
+        "subPara": "Energy Global Enhanced is an end-to-end data analytics project designed to evaluate the relationship between global energy consumption, energy mix composition, and carbon emissions.The project integrates multi-country and multi-year energy data to measure key sustainability indicators such as carbon intensity, weighted carbon emissions, and clean energy scores.Two interactive dashboards provide different analytical perspectives. The first dashboard offers a global overview, visualizing total energy consumption, country-level comparisons, and long-term sustainability trends. The second dashboard focuses on energy types, dynamically illustrating how different energy sources impact carbon emissions through an interactive factory visualization.By combining advanced KPIs, time-series analysis, and intuitive visual storytelling, the project highlights the critical role of energy source selection in reducing environmental impact.The insights generated emphasize that optimizing the energy mix is more effective than reducing energy consumption alone.This project demonstrates strong analytical, visualization, and business interpretation skills, making it suitable for strategic decision-making, sustainability planning, and executive-level reporting.",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4",
-            "https://i.postimg.cc/rmmqNPwf/Screenshot-2025-12-10-130954.png",
-            "https://i.postimg.cc/W33swH19/Screenshot-2025-12-10-131151.png",
-            "https://i.postimg.cc/Y99tzsCP/Screenshot-2025-12-10-131225.png",
-            "https://i.postimg.cc/mD5BXyP5/Screenshot-2025-12-10-131306.png",
-            "https://i.postimg.cc/KzHxqDKF/Screenshot-2025-12-10-131348.png",
-            "https://i.postimg.cc/j5Ftg4Wq/Screenshot_2025_12_10_131441.png"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1767486302/Sequence_01_5_qmiuaw.mp4,
+            "https://i.postimg.cc/pTjnncC6/Screenshot_2026_01_04_015551.png",
+            "https://i.postimg.cc/RFtnnpdp/Screenshot_2026_01_04_015659.png",
+            "https://i.postimg.cc/3wVvNQXz/Screenshot_2026_01_04_020151.png",
+            "https://i.postimg.cc/MGNQHJ7h/Screenshot_2026_01_04_020231.png"
         ]
     },
     {
@@ -105,9 +103,25 @@
             "https://i.postimg.cc/zfW9Zpz3/Screenshot_2025_12_11_133115.png",
             "https://i.postimg.cc/wBJS8Fqv/Screenshot_2025_12_11_133235.png"
         ]
+         {
+        "id": 8,
+        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
+        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
+        "github": "https://github.com/M-Elzayat/HR-Dashboard",
+        "subPara": "This comprehensive HR Analytics project delivers a full end-to-end analysis of workforce data across multiple business dimensions, including employee demographics, job levels, departments, locations, compensation, performance, and workforce dynamics.The project began with raw data provided across multiple Excel files. These files were consolidated, cleaned, and transformed using Python, leveraging Pandas and NumPy to handle missing values, standardize data formats, create derived features, and ensure overall data quality. During this stage, exploratory data analysis was conducted using Matplotlib and Seaborn to identify patterns, correlations, and potential business signals.After data preparation, the cleaned dataset was imported into Power BI, where a robust data model was built by defining relationships between fact and dimension tables. Advanced DAX measures and calculated columns were created to calculate key HR metrics such as headcount, average income, performance scores, attrition indicators, workforce distribution, and departmental KPIs.The final output consists of five interactive Power BI dashboards, each designed to address a specific business perspective:Workforce OverviewDepartment & Job Level AnalysisCompensation & Performance InsightsGeographic & Travel AnalysisWorkforce Trends & Attrition AnalysisThese dashboards enable stakeholders to explore workforce patterns, identify operational strengths and risks, compare departments and locations, and support data-driven decision-making related to talent management, compensation planning, and organizational strategy.This project demonstrates strong capabilities in data cleaning, analytical thinking, data modeling, DAX development, and professional dashboard design aligned with real business use cases.",
+        "imgs": [
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4",
+            "https://i.postimg.cc/rmmqNPwf/Screenshot-2025-12-10-130954.png",
+            "https://i.postimg.cc/W33swH19/Screenshot-2025-12-10-131151.png",
+            "https://i.postimg.cc/Y99tzsCP/Screenshot-2025-12-10-131225.png",
+            "https://i.postimg.cc/mD5BXyP5/Screenshot-2025-12-10-131306.png",
+            "https://i.postimg.cc/KzHxqDKF/Screenshot-2025-12-10-131348.png",
+            "https://i.postimg.cc/j5Ftg4Wq/Screenshot_2025_12_10_131441.png"
+        ]
+    },
     },
     {
-        "id": 8,
+        "id": ,
         "title": "Blinkit Business Performance Analytics Dashboards",
         "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations. The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.",
         "github": "https://github.com/M-Elzayat/Blinkit-Sales",
@@ -123,7 +137,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "E-Commerce Sales Insights & Performance Analytics Dashboard",
         "para": "A complete end-to-end data analytics project designed to analyze E-Commerce sales performance and support business decision-making. Excel data was cleaned and transformed using Python (Pandas & NumPy), with statistical visuals generated using Matplotlib & Seaborn. Power BI was used for advanced data modeling with DAX and to build fully-interactive dashboards showing key KPIs, customer segmentation, product performance, regional insights, and shipping behavior.",
         "github": "https://github.com/M-Elzayat/E-Commerce_Dashbaord",
@@ -136,7 +150,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "Uber Trip Analysis Dashboard — End-to-End Data Analytics Project",
         "para": "An end-to-end data analytics project built with Excel and Power BI. Multiple Excel files were ingested, consolidated and cleaned using Power Query; the data model was designed with optimized relationships and calculated columns. I created DAX measures to calculate KPIs such as Total Bookings, Booking Value, Average Trip Distance, Avg Trip Duration, and Day/Night breakdowns. The deliverable includes three interactive dashboards: Overview (summary KPIs, payment & trip type breakdowns), Time Analysis (hourly/weekday heatmap, pickup-time trends), and Trip Details (row-level table). The dashboards enable deep exploration of booking patterns, vehicle performance, and location-based insights to support operational decisions.",
         "github": "https://github.com/M-Elzayat/Uber-Dashboard",
@@ -149,7 +163,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Health Care Analytics & Interactive Dashboard",
         "para": "An end-to-end Health Care Analytics project using Excel, Python, and Power BI. Performed data cleaning with Pandas & NumPy, visual exploration with Seaborn & Matplotlib, and built a complete Power BI dashboard (Overview, Patients, Doctors). Delivered KPIs for billing, treatments, doctor performance, patient segmentation, and diagnostic insights using advanced DAX and clean data modeling.",
         "github": "https://github.com/M-Elzayat/Health-Care-Dashboard",
@@ -162,7 +176,7 @@
         ]
     },
     {
-        "id": 12,
+        "id": 13,
         "title": "Pizza Sales Analytics & Interactive BI Dashboards",
         "para": "A complete Pizza Sales analysis built using Excel, Power Query, and Power BI. I cleaned and transformed the raw Excel dataset using Power Query, created a structured data model, and developed three interactive dashboards covering revenue, orders, product performance, sales trends, and state-level insights. The dashboards include dynamic KPIs, maps, trend analysis, and category breakdowns, providing a clear view of customer behavior and overall business performance.",
         "github": "https://github.com/M-Elzayat/Pizza-Sales",
@@ -176,7 +190,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": 14,
         "title": "Employee Pay Intelligence Dashboard — Multi-Page Power BI Report",
         "para": "A multi-page Salaries Analysis Dashboard built using Excel, Python (pandas, numpy) for data cleaning, and Power BI for modeling and visualization. The project includes DAX measures, calculated columns, and interactive dashboards analyzing total pay, base pay, overtime, benefits, and job title trends across multiple years.",
         "github": "https://github.com/M-Elzayat/Salaries-Dashboard",
@@ -189,7 +203,7 @@
         ]
     },
     {
-        "id": 14,
+        "id": 15,
         "title": "Wish Clothing Sales Analytics & Interactive Dashboard",
         "para": "This project transforms raw Excel sales data for clothing products sold on Wish into a clean and structured analytical model. Using Python, I performed data cleaning, feature extraction, and exploratory analysis. Power BI was used to build the data model, create calculated columns and DAX measures, and design a dynamic dashboard showcasing sales, profit, product performance, and geographic insights. The results provide actionable business intelligence to improve pricing, stock management, marketing strategy, and product optimization.",
         "github": "https://github.com/M-Elzayat/Wish-Dashboard",
@@ -201,7 +215,7 @@
         ]
     },
     {
-        "id": 15,
+        "id": 16,
         "title": "ZARA Sales Performance Analysis & Interactive Power BI Dashboard",
         "para": "A complete end-to-end data analytics project analyzing ZARA’s sales performance. The dataset was originally provided in multiple Excel files, which were cleaned and prepared using Python (pandas, NumPy). Visual exploratory analysis was performed using Matplotlib and Seaborn to identify early trends and validate data quality. The final cleaned dataset was imported into Power BI, where I built a fully interactive dashboard, implemented DAX measures and calculated columns, and designed a data model to analyze revenue, product performance, pricing, sections, promotions, and store position impact.",
         "github": "https://github.com/M-Elzayat/ZARA-Sales-Performance-Analysis-Interactive-Power-BI-Dashboard/tree/mainq",
@@ -213,7 +227,7 @@
         ]
     },
     {
-        "id": 16,
+        "id": 17,
         "title": "Mobile Phones Sales Analytics – Interactive Power BI Dashboard",
         "para": "A comprehensive data analytics project that explores mobile phone sales performance using real marketplace data. The dataset was cleaned and prepared using Python (Pandas & NumPy), followed by advanced data modeling and DAX calculations in Power BI to build three fully-interactive dashboards.The dashboards provide insights into product prices, discounts, offers, sales performance by brand, customer ratings, and business metrics such as Prime products, Amazon’s Choice, and Best-Seller distribution.This project highlights the end-to-end analytics process from raw data → data cleaning → transformation → modeling → visualization → business insights.",
         "github": "https://github.com/M-Elzayat/Phones-Dashboard",
@@ -226,7 +240,7 @@
         ]
     },
     {
-        "id": 17,
+        "id": 18,
         "title": "Bikes Sales Data Analysis & Interactive Power BI Dashboards",
         "para": "This project focuses on analyzing Bikes Sales data using Excel, Python, and Power BI. I performed data cleaning and preprocessing with Pandas and NumPy, and created initial visual explorations using Matplotlib and Seaborn. After preparing the dataset, I built a complete data model in Power BI, created the required DAX measures, and designed three interactive dashboards covering territories performance, product insights, and an overall business overview.",
         "github": "https://github.com/M-Elzayat/Bikes-Sales-Dashboard",
@@ -239,7 +253,7 @@
         ]
     },
       {
-        "id": 18,
+        "id": 19,
         "title": "Construction Project Financial & Operations Dashboards – FAM Interior (Sample Work)",
         "para": "These dashboards are sample visuals from my work at FAM Interior, created to support project finance, operations, and management reporting.They focus on tracking revenue, costs, budgets, and cash flow across multiple construction projects.The dashboards provide visibility into owner billing, subcontractor payments, and approved pay applications.Key KPIs highlight financial performance, variances, and supplier-to-owner ratios.Interactive filters allow analysis by project, company, date, and operational stage.Detailed tables enable drill-down from portfolio level to individual project and invoice level.Monthly trends help monitor payment progress and operational cost movements.This is a simplified sample shared as proof of experience, not the full scope of delivered work.",
         "github": "https://github.com/M-Elzayat",
@@ -257,7 +271,7 @@
         ]
     },
     {
-        "id": 19,
+        "id": 20,
         "title": "Auto Sales & Weather Impact Dashboard",
         "para": "A Auto Sales & Weather Impact Data. The data was cleaned using Python (Pandas, NumPy) and visualized with Matplotlib & Seaborn. Power BI was used for data modeling, DAX measures, and building interactive dashboards that reveal sales trends, regional performance, and key influencers behind recalls and product issues.The project provides clear insights that support decision-making and highlight performance patterns across cities, models, and weather conditions.",
         "github": "https://github.com/M-Elzayat/Cars_Sales_Dashboard",
@@ -271,6 +285,7 @@
         ]
     }
 ]
+
 
 
 
