@@ -102,8 +102,9 @@
             "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png",
             "https://i.postimg.cc/zfW9Zpz3/Screenshot_2025_12_11_133115.png",
             "https://i.postimg.cc/wBJS8Fqv/Screenshot_2025_12_11_133235.png"
-        ]
-         {
+         ]
+     },
+     {
         "id": 8,
         "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
         "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
@@ -118,7 +119,6 @@
             "https://i.postimg.cc/KzHxqDKF/Screenshot-2025-12-10-131348.png",
             "https://i.postimg.cc/j5Ftg4Wq/Screenshot_2025_12_10_131441.png"
         ]
-    },
     },
     {
         "id": 9,
@@ -285,3 +285,4 @@
         ]
     }
 ]
+
