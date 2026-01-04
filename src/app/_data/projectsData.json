@@ -17,16 +17,18 @@
     },
     {
         "id": 2,
-        "title": "Energy Global Enhanced: Data-Driven Insights into Energy Consumption & Carbon Emissions Dashboard",
-        "para": "Energy Global Enhanced is a comprehensive data analytics project that explores global energy consumption patterns and their impact on carbon emissions.The project analyzes multiple energy sources, including fossil fuels, oil & gas, electricity, renewables, and nuclear energy.Interactive dashboards highlight carbon intensity, clean energy scores, and emission trends across countries and years.Advanced KPIs are used to measure sustainability performance and energy efficiency.The project demonstrates how energy mix decisions influence environmental outcomes.Dynamic visuals allow users to compare scenarios based on energy type selection.This analysis supports data-driven decision-making for sustainable energy strategies.",
-        "github": "https://github.com/M-Elzayat",
-        "subPara": "Energy Global Enhanced is an end-to-end data analytics project designed to evaluate the relationship between global energy consumption, energy mix composition, and carbon emissions.The project integrates multi-country and multi-year energy data to measure key sustainability indicators such as carbon intensity, weighted carbon emissions, and clean energy scores.Two interactive dashboards provide different analytical perspectives. The first dashboard offers a global overview, visualizing total energy consumption, country-level comparisons, and long-term sustainability trends. The second dashboard focuses on energy types, dynamically illustrating how different energy sources impact carbon emissions through an interactive factory visualization.By combining advanced KPIs, time-series analysis, and intuitive visual storytelling, the project highlights the critical role of energy source selection in reducing environmental impact.The insights generated emphasize that optimizing the energy mix is more effective than reducing energy consumption alone.This project demonstrates strong analytical, visualization, and business interpretation skills, making it suitable for strategic decision-making, sustainability planning, and executive-level reporting.",
+        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
+        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
+        "github": "https://github.com/M-Elzayat/HR-Dashboard",
+        "subPara": "This comprehensive HR Analytics project delivers a full end-to-end analysis of workforce data across multiple business dimensions, including employee demographics, job levels, departments, locations, compensation, performance, and workforce dynamics.The project began with raw data provided across multiple Excel files. These files were consolidated, cleaned, and transformed using Python, leveraging Pandas and NumPy to handle missing values, standardize data formats, create derived features, and ensure overall data quality. During this stage, exploratory data analysis was conducted using Matplotlib and Seaborn to identify patterns, correlations, and potential business signals.After data preparation, the cleaned dataset was imported into Power BI, where a robust data model was built by defining relationships between fact and dimension tables. Advanced DAX measures and calculated columns were created to calculate key HR metrics such as headcount, average income, performance scores, attrition indicators, workforce distribution, and departmental KPIs.The final output consists of five interactive Power BI dashboards, each designed to address a specific business perspective:Workforce OverviewDepartment & Job Level AnalysisCompensation & Performance InsightsGeographic & Travel AnalysisWorkforce Trends & Attrition AnalysisThese dashboards enable stakeholders to explore workforce patterns, identify operational strengths and risks, compare departments and locations, and support data-driven decision-making related to talent management, compensation planning, and organizational strategy.This project demonstrates strong capabilities in data cleaning, analytical thinking, data modeling, DAX development, and professional dashboard design aligned with real business use cases.",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1767486302/Sequence_01_5_qmiuaw.mp4",
-            "https://i.postimg.cc/pTjnncC6/Screenshot_2026_01_04_015551.png",
-            "https://i.postimg.cc/RFtnnpdp/Screenshot_2026_01_04_015659.png",
-            "https://i.postimg.cc/3wVvNQXz/Screenshot_2026_01_04_020151.png",
-            "https://i.postimg.cc/MGNQHJ7h/Screenshot_2026_01_04_020231.png"
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4",
+            "https://i.postimg.cc/rmmqNPwf/Screenshot-2025-12-10-130954.png",
+            "https://i.postimg.cc/W33swH19/Screenshot-2025-12-10-131151.png",
+            "https://i.postimg.cc/Y99tzsCP/Screenshot-2025-12-10-131225.png",
+            "https://i.postimg.cc/mD5BXyP5/Screenshot-2025-12-10-131306.png",
+            "https://i.postimg.cc/KzHxqDKF/Screenshot-2025-12-10-131348.png",
+            "https://i.postimg.cc/j5Ftg4Wq/Screenshot_2025_12_10_131441.png"
         ]
     },
     {
@@ -86,8 +88,21 @@
             "https://i.postimg.cc/R0gd6HZJ/Screenshot_2025_12_11_123352.png"
         ]
     },
-    {
-        "id": 7,
+    {  "id": 7,
+        "title": "Energy Global Enhanced: Data-Driven Insights into Energy Consumption & Carbon Emissions Dashboard",
+        "para": "Energy Global Enhanced is a comprehensive data analytics project that explores global energy consumption patterns and their impact on carbon emissions.The project analyzes multiple energy sources, including fossil fuels, oil & gas, electricity, renewables, and nuclear energy.Interactive dashboards highlight carbon intensity, clean energy scores, and emission trends across countries and years.Advanced KPIs are used to measure sustainability performance and energy efficiency.The project demonstrates how energy mix decisions influence environmental outcomes.Dynamic visuals allow users to compare scenarios based on energy type selection.This analysis supports data-driven decision-making for sustainable energy strategies.",
+        "github": "https://github.com/M-Elzayat",
+        "subPara": "Energy Global Enhanced is an end-to-end data analytics project designed to evaluate the relationship between global energy consumption, energy mix composition, and carbon emissions.The project integrates multi-country and multi-year energy data to measure key sustainability indicators such as carbon intensity, weighted carbon emissions, and clean energy scores.Two interactive dashboards provide different analytical perspectives. The first dashboard offers a global overview, visualizing total energy consumption, country-level comparisons, and long-term sustainability trends. The second dashboard focuses on energy types, dynamically illustrating how different energy sources impact carbon emissions through an interactive factory visualization.By combining advanced KPIs, time-series analysis, and intuitive visual storytelling, the project highlights the critical role of energy source selection in reducing environmental impact.The insights generated emphasize that optimizing the energy mix is more effective than reducing energy consumption alone.This project demonstrates strong analytical, visualization, and business interpretation skills, making it suitable for strategic decision-making, sustainability planning, and executive-level reporting.",
+        "imgs": [
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1767486302/Sequence_01_5_qmiuaw.mp4",
+            "https://i.postimg.cc/pTjnncC6/Screenshot_2026_01_04_015551.png",
+            "https://i.postimg.cc/RFtnnpdp/Screenshot_2026_01_04_015659.png",
+            "https://i.postimg.cc/3wVvNQXz/Screenshot_2026_01_04_020151.png",
+            "https://i.postimg.cc/MGNQHJ7h/Screenshot_2026_01_04_020231.png"
+         ]
+     },
+     {
+         "id": 8,
         "title": "Hotel Booking & Revenue Analytics Dashboard",
         "para": "A full hotel analytics project built using Excel, Python, and Power BI. The data was cleaned and prepared using Pandas & NumPy, with exploratory visuals created using Seaborn and Matplotlib. After modeling the data in Power BI and building DAX measures, four interactive dashboards were developed to analyze revenue, reservations, guest types, room categories, and country-level performance.",
         "github": "https://github.com/M-Elzayat/Hotel-Booking-Dashboard",
@@ -102,22 +117,6 @@
             "https://i.postimg.cc/dt15Ny7d/Screenshot-2025-06-26-170340.png",
             "https://i.postimg.cc/zfW9Zpz3/Screenshot_2025_12_11_133115.png",
             "https://i.postimg.cc/wBJS8Fqv/Screenshot_2025_12_11_133235.png"
-         ]
-     },
-     {
-        "id": 8,
-        "title": "HR Workforce & Attrition Analytics Dashboard — End-to-End Data Analysis Project",
-        "para": "This HR Analytics project analyzes workforce demographics, salary trends, performance ratings, and attrition across company branches. I used Python (Pandas & NumPy) for data cleaning and exploratory charts, then imported the cleaned data into Power BI for modeling using DAX measures and calculated columns. The final dashboards provide clear insights into employee distribution, workload, compensation, and key factors influencing attrition.",
-        "github": "https://github.com/M-Elzayat/HR-Dashboard",
-        "subPara": "This comprehensive HR Analytics project delivers a full end-to-end analysis of workforce data across multiple business dimensions, including employee demographics, job levels, departments, locations, compensation, performance, and workforce dynamics.The project began with raw data provided across multiple Excel files. These files were consolidated, cleaned, and transformed using Python, leveraging Pandas and NumPy to handle missing values, standardize data formats, create derived features, and ensure overall data quality. During this stage, exploratory data analysis was conducted using Matplotlib and Seaborn to identify patterns, correlations, and potential business signals.After data preparation, the cleaned dataset was imported into Power BI, where a robust data model was built by defining relationships between fact and dimension tables. Advanced DAX measures and calculated columns were created to calculate key HR metrics such as headcount, average income, performance scores, attrition indicators, workforce distribution, and departmental KPIs.The final output consists of five interactive Power BI dashboards, each designed to address a specific business perspective:Workforce OverviewDepartment & Job Level AnalysisCompensation & Performance InsightsGeographic & Travel AnalysisWorkforce Trends & Attrition AnalysisThese dashboards enable stakeholders to explore workforce patterns, identify operational strengths and risks, compare departments and locations, and support data-driven decision-making related to talent management, compensation planning, and organizational strategy.This project demonstrates strong capabilities in data cleaning, analytical thinking, data modeling, DAX development, and professional dashboard design aligned with real business use cases.",
-        "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1765744040/Sequence_01_jcdchv.mp4",
-            "https://i.postimg.cc/rmmqNPwf/Screenshot-2025-12-10-130954.png",
-            "https://i.postimg.cc/W33swH19/Screenshot-2025-12-10-131151.png",
-            "https://i.postimg.cc/Y99tzsCP/Screenshot-2025-12-10-131225.png",
-            "https://i.postimg.cc/mD5BXyP5/Screenshot-2025-12-10-131306.png",
-            "https://i.postimg.cc/KzHxqDKF/Screenshot-2025-12-10-131348.png",
-            "https://i.postimg.cc/j5Ftg4Wq/Screenshot_2025_12_10_131441.png"
         ]
     },
     {
@@ -285,4 +284,5 @@
         ]
     }
 ]
+
 
