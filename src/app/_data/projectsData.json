@@ -121,7 +121,7 @@
     },
     },
     {
-        "id": ,
+        "id": 9,
         "title": "Blinkit Business Performance Analytics Dashboards",
         "para": "A comprehensive analysis of Blinkit’s business covering sales performance, product trends, customer feedback, and area-wise operations. The project includes 6 fully interactive dashboards that support decision-making, highlight top-performing areas, and enhance customer satisfaction.",
         "github": "https://github.com/M-Elzayat/Blinkit-Sales",
@@ -285,10 +285,3 @@
         ]
     }
 ]
-
-
-
-
-
-
-
