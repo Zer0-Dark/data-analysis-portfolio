@@ -22,7 +22,7 @@
         "github": "https://github.com/M-Elzayat",
         "subPara": "Energy Global Enhanced is an end-to-end data analytics project designed to evaluate the relationship between global energy consumption, energy mix composition, and carbon emissions.The project integrates multi-country and multi-year energy data to measure key sustainability indicators such as carbon intensity, weighted carbon emissions, and clean energy scores.Two interactive dashboards provide different analytical perspectives. The first dashboard offers a global overview, visualizing total energy consumption, country-level comparisons, and long-term sustainability trends. The second dashboard focuses on energy types, dynamically illustrating how different energy sources impact carbon emissions through an interactive factory visualization.By combining advanced KPIs, time-series analysis, and intuitive visual storytelling, the project highlights the critical role of energy source selection in reducing environmental impact.The insights generated emphasize that optimizing the energy mix is more effective than reducing energy consumption alone.This project demonstrates strong analytical, visualization, and business interpretation skills, making it suitable for strategic decision-making, sustainability planning, and executive-level reporting.",
         "imgs": [
-            "https://res.cloudinary.com/dusfogui1/video/upload/v1767486302/Sequence_01_5_qmiuaw.mp4,
+            "https://res.cloudinary.com/dusfogui1/video/upload/v1767486302/Sequence_01_5_qmiuaw.mp4",
             "https://i.postimg.cc/pTjnncC6/Screenshot_2026_01_04_015551.png",
             "https://i.postimg.cc/RFtnnpdp/Screenshot_2026_01_04_015659.png",
             "https://i.postimg.cc/3wVvNQXz/Screenshot_2026_01_04_020151.png",
@@ -285,6 +285,7 @@
         ]
     }
 ]
+
 
 
 
