@@ -17,7 +17,7 @@ function NewHero() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className=" w-full h-screen flex flex-col lg:px-12 px-8   ">
+        <div className=" w-full lg:h-screen flex flex-col lg:px-12 px-8   ">
             <div className="w-full mb-4 pt-6  flex justify-between relative">
                 <div className="hidden md:flex lg:gap-5 gap-2 lg:text-xl text-sm [&>a]:bg-brand-semi-dark [&>a]:flex [&>a]:justify-center [&>a]:items-center [&>a]:lg:px-4 [&>a]:px-2 [&>a]:lg:py-2 [&>a]:rounded-xl [&>a]:hover:bg-brand [&>a]:hover:text-black [&>a]:font-bold [&>a]:transition-all [&>a]:duration-300">
                     <a href="#projects">Projects</a>
@@ -46,8 +46,8 @@ function NewHero() {
 
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-5 h-[100%] pb-12  ">
-                <div className="w-full md:w-1/4 flex flex-col mt-[4%] relative order-2 md:order-none ">
+            <div className="flex flex-col items-center justify-between md:flex-row gap-5 h-[100%] pb-12  ">
+                <div className="w-full md:w-2/5 flex flex-col mt-[4%] relative order-2 md:order-none ">
                     <h1 className="text-3xl md:text-5xl font-black mb-4">
                         {hero.name.split(" ").slice(0, 2).join(" ")} <br />
                         {hero.name.split(" ").slice(2).join(" ")}
@@ -62,7 +62,7 @@ function NewHero() {
                         ))}
                     </div>
                 </div>
-                <div className="w-full md:w-2/4 h-[50vh] md:h-[100%] relative order-1 md:order-none ">
+                <div className="w-full md:w-2/4 h-[50vh] md:min-h-[100%] relative order-1 md:order-none ">
                     <Image
                         fill
                         src={hero.heroImage}
@@ -70,7 +70,7 @@ function NewHero() {
                         className="max-h-full object-contain "
                     />
                 </div>
-                <div className="w-full md:w-1/4 relative hidden md:block">
+                {/* <div className="w-full md:w-1/4 relative hidden md:block">
                     <div className=" absolute top-[30%] -left-48 flex flex-row-reverse flex-wrap gap-12  w-92  ">
                         {skills.items.slice(0, 3).map((skill, index) => (
                             <motion.div
@@ -96,7 +96,7 @@ function NewHero() {
                             </motion.div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

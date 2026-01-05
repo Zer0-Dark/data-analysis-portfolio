@@ -91,11 +91,12 @@ function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
     const currentIsVideo = isVideo(currentUrl);
 
     return (
-        <div className=" w-screen h-screen fixed flex justify-center items-center  bg-[rgba(0,0,0,0.6)] top-0 left-0 z-50 text-white">
+        // ! Main Component
+        <div className=" overflow-y-auto w-screen h-screen fixed flex lg:justify-center lg:items-center  bg-[rgba(0,0,0,0.6)] top-0 left-0 z-50 text-white">
             {
                 !imgExpand &&
                 <div
-                    className="flex flex-col items-center  lg:h-[90%] h-[95%] lg:w-[90%] w-[95%] bg-brand-dark relative rounded-md lg:px-12 px-5 border-2 border-brand">
+                    className="flex h-fit flex-col items-center lg:h-[90%] lg:w-[90%] w-[95%] bg-brand-dark relative rounded-md lg:px-12 px-5 border-2 border-brand">
                     <button
                         className=" cursor-pointer absolute top-4 right-4 text-4xl lg:text-6xl"
                         onClick={handleShow}>
@@ -148,7 +149,7 @@ function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
                             </div>
                         </div>
                         {/* right container */}
-                        <div className="lg:w-5/12  overflow-hidden max-h-full text-sm flex flex-col h-full w-full ">
+                        <div className="lg:w-5/12 lg:max-h-fit max-h-54  overflow-hidden  text-sm flex flex-col h-full w-full ">
                             <p className="lg:max-h-[90%] max-h-[35%] lg:w-auto min-w-full overflow-y-scroll overflow-x-hidden custom-scrollbar">
                                 {para}
                             </p>
@@ -164,10 +165,10 @@ function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
                     </div>
                 </div>
             }
-
+            {/*  */}
             {
                 imgExpand &&
-                <div className=" absolute gap-1  flex  items-center justify-center h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
+                <div className=" absolute gap-1  flex  items-center justify-center lg:h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
 
                     <button onClick={() => setImgExpand((prev) => !prev)} className=" absolute text-6xl top-6 right-6 cursor-pointer">
                         <FaXingSquare />
