@@ -11,7 +11,7 @@ const EASE = [0.2, 0.7, 0.2, 1];
 // so break them back into readable paragraphs.
 function toParagraphs(text = "") {
     return text
-        .split(/(?<=[.:])(?=[A-Z])/)
+        .split(/\n+|(?<=[.:])(?=[A-Z])/)
         .map((s) => s.trim())
         .filter(Boolean);
 }

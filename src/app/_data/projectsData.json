@@ -1,5 +1,27 @@
 [
     {
+        "id": 21,
+        "title": "Southern Second Ring Road (Riyadh) — Workforce & HR Analytics for SAPAC",
+        "shortTitle": "Southern Ring Road Workforce Analytics — SAPAC",
+        "category": "People & HR",
+        "summary": "An Arabic workforce command centre for a Riyadh mega-project: 3,458 employees, attendance, readiness, turnover and workforce mix.",
+        "tools": [
+            "Power BI",
+            "DAX"
+        ],
+        "para": "An Arabic, right-to-left HR analytics platform built for SAPAC (Pan Kingdom) on the Southern Second Ring Road project in Riyadh, turning workforce and attendance data into clear indicators that support follow-up and decision-making.",
+        "github": "https://github.com/M-Elzayat",
+        "subPara": "A multi-page Power BI report built in Arabic with a right-to-left layout for SAPAC (Pan Kingdom) on the Southern Second Ring Road project, phases one and two, in Riyadh. It tracks a workforce of 3,458 employees across 12 departments.\nIntro page: project code, location and last update, with aerial site photography and quick navigation to every section.\nExecutive Summary: headline KPIs for total employees, workforce on duty (2,417), leavers (885), cumulative turnover (25.5%) and Saudization (2.80%), an executive alert centre that ranks the top five priorities needing action, the monthly hiring trend, workforce by department and the labour split by sponsor type.\nWorkforce Structure: nationalities of active employees on an interactive map, the top job roles, age bands, length of service and the company vs. outsourced labour mix.\nAttendance & Operational Readiness: an operational readiness score (89.8%) with a gap analysis from project strength to staff verified on site, a readiness matrix by last fingerprint scan, attendance-quality tracking (97.7%), leave by department and the departments with the most fingerprint review cases.\nTurnover: leavers by length of service, a monthly turnover trend with a three-month moving average, and the departments with the highest turnover.\nA shared filter panel (fingerprint location, department, sponsor, employee status, contract status) and a built-in executive assistant panel keep every page interactive.",
+        "imgs": [
+            "/projects/sapac/walkthrough.mp4",
+            "/projects/sapac/01-intro.jpg",
+            "/projects/sapac/02-executive-summary.jpg",
+            "/projects/sapac/03-workforce-structure.jpg",
+            "/projects/sapac/04-attendance-readiness.jpg",
+            "/projects/sapac/05-turnover.jpg"
+        ]
+    },
+    {
         "id": 1,
         "title": "Supply Chain Performance & Sales Intelligence Dashboard",
         "shortTitle": "Supply Chain Performance & Sales Intelligence",
