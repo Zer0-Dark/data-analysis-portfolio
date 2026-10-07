@@ -1,82 +1,113 @@
 'use client';
-import React, { useEffect, useRef } from 'react'
-import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
-import Image from 'next/image'
-import sections from '../_data/sections.json'
+import Image from "next/image";
+import { motion, useReducedMotion } from "motion/react";
+import { FiArrowRight } from "react-icons/fi";
+import data from "../_data/sections.json";
+
+const EASE = [0.2, 0.7, 0.2, 1];
 
 function Hero() {
-    const vantaRef = useRef(null)
-    const vantaEffect = useRef(null)
+    const { hero, stats } = data;
+    const reduce = useReducedMotion();
 
-    useEffect(() => {
-        if (!vantaEffect.current && vantaRef.current) {
-            // Dynamically import VANTA and THREE
-            import('vanta/dist/vanta.globe.min')
-                .then((VANTA) => {
-                    import('three').then((THREE) => {
-                        vantaEffect.current = VANTA.default({
-                            el: vantaRef.current,
-                            THREE: THREE,
-                            mouseControls: true,
-                            touchControls: true,
-                            gyroControls: false,
-                            minHeight: 200.00,
-                            minWidth: 200.00,
-                            scale: 1.00,
-                            scaleMobile: 1.00,
-                            color: 0x8750f7,
-                            backgroundColor: 0x0f0715
-                        })
-                    })
-                })
-        }
+    const fade = (delay) =>
+        reduce
+            ? {}
+            : {
+                initial: { opacity: 0, y: 28, filter: "blur(10px)" },
+                animate: { opacity: 1, y: 0, filter: "blur(0px)" },
+                transition: { duration: 1.1, ease: EASE, delay },
+            };
 
-        return () => {
-            if (vantaEffect.current) {
-                vantaEffect.current.destroy()
-            }
-        }
-    }, [])
+    const lines = [...hero.headline, null];
 
     return (
-        <div className='flex lg:flex-row flex-col flex-wrap  w-full lg:h-screen h-fit relative border-b-1 border-b-brand'>
-            <div className='lg:w-2/3 w-full h-full absolute top-0 left-0' ref={vantaRef}>
-            </div>
-            <div className='w-full h-full absolute top-0 left-0 z-10 bg-brand-dark opacity-30'>
+        <>
+            <section className="relative mx-auto flex max-w-[1200px] flex-col-reverse items-center gap-10 px-4 pt-10 pb-12 sm:px-6 md:flex-row md:gap-14 md:pt-[72px]">
+                <div aria-hidden="true" className="drift pointer-events-none absolute -left-32 top-5 h-[420px] w-[420px] rounded-full bg-brand opacity-[0.16] blur-[110px]" />
+                <div aria-hidden="true" className="drift-alt pointer-events-none absolute right-[10%] -bottom-20 h-[360px] w-[360px] rounded-full bg-[#5a2fc0] opacity-[0.18] blur-[110px]" />
 
-            </div>
-            <div className=' z-20  w-2/3 flex flex-col justify-center px-42'>
-                <h1 className='text-6xl font-bold'>{sections.hero.name}</h1>
-                <h2 className='text-4xl mt-8 font-semibold text-brand'>{sections.hero.role}</h2>
-                <p className=' pr-48 mt-8'>
-                    {sections.hero.description}
-                </p>
-                <div className='flex  items-center gap-6 mt-12'>
-                    <a href={sections.hero.cvLink} className=' cursor-pointer inline-block px-6 py-3 border-brand border-2 rounded-2xl text-white text-xl font-bold hover:bg-brand '>
-                        Download CV
-                    </a>
-                    <div className='flex gap-6 text-4xl [&>*]:hover:text-brand [&>*]:cursor-pointer  '>
-                        <a>
-                            <FaFacebook />
+                <div className="relative flex w-full min-w-0 flex-1 flex-col gap-6">
+                    <h1 className="m-0 text-[44px] leading-[1.02] font-extrabold tracking-[-0.03em] sm:text-6xl lg:text-[76px]">
+                        {lines.map((line, i) => (
+                            <span key={i} className="block overflow-hidden pb-[0.06em]">
+                                <motion.span
+                                    className="inline-block"
+                                    initial={reduce ? false : { y: "110%", rotate: 3 }}
+                                    animate={{ y: "0%", rotate: 0 }}
+                                    transition={{ duration: 1.1, ease: EASE, delay: 0.05 + i * 0.13 }}
+                                >
+                                    {line ?? <span className="underline-draw">{hero.headlineAccent}</span>}
+                                </motion.span>
+                            </span>
+                        ))}
+                    </h1>
+                    <motion.p {...fade(0.5)} className="m-0 max-w-[560px] text-base leading-relaxed text-[#cfc6dc] sm:text-lg">
+                        {hero.intro}
+                    </motion.p>
+                    <motion.div {...fade(0.65)} className="mt-2 flex flex-wrap gap-3">
+                        <a href="#projects" className="btn-primary inline-flex items-center gap-2.5 rounded-xl px-6 py-[15px] font-semibold">
+                            View projects
+                            <FiArrowRight className="arrow" aria-hidden="true" />
                         </a>
-                        <a>
-                            <FaGithub />
-
+                        <a href="#contact" className="btn-ghost inline-flex items-center gap-2.5 rounded-xl px-6 py-[15px] font-semibold">
+                            Get in touch
                         </a>
-                        <a>
-                            <FaLinkedin />
-
-                        </a>
-                    </div>
-
+                    </motion.div>
                 </div>
-            </div>
-            <div className='bg-dark-brand lg:w-1/3 w-full lg:h-full relative border-brand  border-l-2   '>
-                <Image fill={true} className='object-cover max-w-full max-h-full ' src="https://i.postimg.cc/TY7WWgx9/fassafafs.png" alt="Professional portrait" />
 
-            </div>
-        </div >
-    )
+                <motion.div {...fade(0.3)} className="relative flex w-full min-w-0 flex-1 justify-center">
+                    <div className="relative aspect-[4/5] w-full max-w-[300px] overflow-hidden rounded-[30px] p-0.5 shadow-[0_30px_80px_rgba(135,80,247,0.25)] sm:max-w-[400px] md:max-w-[440px]">
+                        <div
+                            aria-hidden="true"
+                            className="spin-slow absolute -left-1/2 -top-1/2 h-[200%] w-[200%]"
+                            style={{ background: "conic-gradient(from 0deg, transparent 0deg, transparent 230deg, #8750f7 300deg, #ffffff 330deg, transparent 360deg)" }}
+                        />
+                        <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-brand-semi-dark">
+                            <div aria-hidden="true" className="glow-pulse absolute left-1/2 -bottom-[30%] h-4/5 w-[120%] rounded-full bg-brand opacity-35 blur-[70px]" />
+                            <Image
+                                fill
+                                priority
+                                src={hero.heroImage}
+                                alt={`Portrait of ${hero.name}`}
+                                sizes="(max-width: 768px) 300px, 440px"
+                                className="object-contain object-bottom"
+                            />
+                            <div className="absolute right-4 bottom-4 left-4 flex flex-wrap gap-2">
+                                {hero.tags.map((tag, i) => (
+                                    <span
+                                        key={tag}
+                                        className={`float ${i === 1 ? "float-2" : i === 2 ? "float-3" : ""} rounded-full border border-[#3a2756] bg-brand-dark/85 px-3 py-[7px] font-mono text-xs`}
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </section>
+
+            <motion.section {...fade(0.8)} aria-label="Highlights" className="mx-auto max-w-[1200px] px-4 pb-6 sm:px-6">
+                <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[20px] border border-brand-line bg-brand-line lg:grid-cols-4">
+                    {stats.map((stat) => (
+                        <div key={stat.label} className="flex flex-col gap-1.5 bg-brand-semi-dark p-5 sm:p-7">
+                            {stat.value !== undefined ? (
+                                <span
+                                    className="count text-3xl font-extrabold tracking-tight tabular-nums sm:text-[40px]"
+                                    style={{ "--to": stat.value }}
+                                    aria-label={String(stat.value)}
+                                />
+                            ) : (
+                                <span className="text-3xl font-extrabold tracking-tight sm:text-[40px]">{stat.text}</span>
+                            )}
+                            <span className="text-[13px] text-brand-muted sm:text-sm">{stat.label}</span>
+                        </div>
+                    ))}
+                </div>
+            </motion.section>
+        </>
+    );
 }
 
-export default Hero
+export default Hero;

@@ -1,59 +1,86 @@
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaGithub,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
-import SectionTitle from "./SectionTitle";
-import Image from "next/image";
+import { FiArrowRight, FiFacebook, FiGithub, FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
+import Reveal from "./Reveal";
 import contactData from "../_data/contactData.json";
 import sections from "../_data/sections.json";
 
 const iconMap = {
-  phone: FaPhoneAlt,
-  email: FaEnvelope,
-  facebook: FaFacebook,
-  linkedin: FaLinkedin,
-  github: FaGithub,
+  phone: FiPhone,
+  email: FiMail,
+  facebook: FiFacebook,
+  linkedin: FiLinkedin,
+  github: FiGithub,
 };
 
-function Contact() {
-  return (
-    <div className="lg:px-42 px-8 " id="contact">
-      <SectionTitle title={sections.contact.title} />
-      {/* <div className='w-1/2 '>
-                    <Image alt='cv' src={'/cv.png'} width={1200} height={900} className='w-3/4 border-5 rounded-xl border-brand'></Image>
-                </div> */}
-      <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-8 lg:justify-between lg:items-center flex-wrap">
-        {contactData.map((contact) => {
-          const IconComponent = iconMap[contact.icon];
-          return (
-            <a href={contact.href}
-              key={contact.id}
+const captionMap = {
+  phone: "Phone",
+  email: "Email",
+  linkedin: "LinkedIn",
+};
 
-            >
-              <div
-                className="flex gap-5 items-center flex-shrink-0"
-              >
-                <div
-                  className="rounded-full p-3 flex-shrink-0"
-                  style={{
-                    background:
-                      "linear-gradient(161deg, #1f1238 0%, #8750F7 100%)",
-                  }}
-                >
-                  {IconComponent && <IconComponent />}
-                </div>
-                <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
-                  {contact.label}
-                </h2>
-              </div>
+function ContactRow({ contact }) {
+  const Icon = iconMap[contact.icon];
+  const caption = captionMap[contact.icon];
+  const external = contact.href.startsWith("http");
+
+  return (
+    <a
+      href={contact.href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      className="row-slide flex min-w-0 items-center gap-4 rounded-[14px] border border-brand-line p-3.5 text-white"
+    >
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-raised text-xl text-brand-soft">
+        {Icon && <Icon aria-hidden="true" />}
+      </span>
+      <span className="flex min-w-0 flex-col gap-0.5">
+        {caption && <span className="text-xs text-brand-muted">{caption}</span>}
+        <span className="text-base font-semibold [overflow-wrap:anywhere]">{contact.label}</span>
+      </span>
+    </a>
+  );
+}
+
+function Contact() {
+  const { contact, hero } = sections;
+  const email = contactData.find((c) => c.icon === "email");
+  const primary = contactData.filter((c) => captionMap[c.icon]);
+  const social = contactData.filter((c) => !captionMap[c.icon]);
+
+  return (
+    <section id="contact" className="mx-auto max-w-[1200px] px-4 pt-20 pb-6 sm:px-6 md:pt-24">
+      <Reveal className="relative flex flex-col gap-10 overflow-hidden rounded-[28px] border border-brand-line-strong bg-brand-semi-dark p-6 sm:p-10 lg:flex-row lg:gap-12 lg:p-16">
+        <div aria-hidden="true" className="drift pointer-events-none absolute -top-40 -right-32 h-[420px] w-[420px] rounded-full bg-brand opacity-[0.22] blur-[90px]" />
+
+        <div className="relative flex min-w-0 flex-1 flex-col gap-4">
+          <span className="font-mono text-[13px] tracking-[0.08em] text-brand-soft uppercase">{contact.eyebrow}</span>
+          <h2 className="m-0 text-[34px] leading-[1.08] font-extrabold tracking-tight lg:text-[52px]">
+            {contact.headline} <span className="text-brand">{contact.headlineAccent}</span>
+          </h2>
+          <p className="m-0 text-base leading-relaxed text-brand-muted">{contact.intro}</p>
+          <div className="mt-2 flex flex-wrap gap-3">
+            {email && (
+              <a href={email.href} className="btn-primary inline-flex items-center gap-2.5 rounded-xl px-6 py-[15px] font-semibold">
+                Email me
+                <FiArrowRight className="arrow" aria-hidden="true" />
+              </a>
+            )}
+            <a href={hero.cvLink} className="btn-ghost inline-flex items-center gap-2.5 rounded-xl px-6 py-[15px] font-semibold">
+              Download CV
             </a>
-          );
-        })}
-      </div>
-    </div>
+          </div>
+        </div>
+
+        <div className="relative flex min-w-0 flex-1 flex-col gap-2.5">
+          {primary.map((c) => (
+            <ContactRow key={c.id} contact={c} />
+          ))}
+          <div className="grid grid-cols-2 gap-2.5">
+            {social.map((c) => (
+              <ContactRow key={c.id} contact={c} />
+            ))}
+          </div>
+        </div>
+      </Reveal>
+    </section>
   );
 }
 

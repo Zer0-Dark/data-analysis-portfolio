@@ -1,207 +1,166 @@
-import Image from "next/image"
-import { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import {
-    FaXingSquare,
-    FaArrowAltCircleRight,
-    FaArrowAltCircleLeft
-} from "react-icons/fa";
+'use client';
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { motion } from "motion/react";
+import { FiChevronLeft, FiChevronRight, FiGithub, FiPlay, FiX } from "react-icons/fi";
 
-function ProjectPopup({ handleShow, title, para, imgs, github, code }) {
+const isVideo = (url) => url.toLowerCase().endsWith(".mp4");
+const EASE = [0.2, 0.7, 0.2, 1];
 
-
-    const [currentImg, setCurrentImg] = useState(0);
-    const [scrollIndex, setScrollIndex] = useState(0);
-    const [imgExpand, setImgExpand] = useState(false);
-    const [visibleThumbnails, setVisibleThumbnails] = useState(4);
-    useEffect(() => {
-        if (window.innerWidth > 600) {
-
-            setVisibleThumbnails(4)
-        } else {
-            setVisibleThumbnails(2)
-
-        }
-    }, [])
-
-
-    function handleBigImgButton(dir) {
-        if (dir === 0) {
-            if (currentImg < imgs.length - 1) {
-
-                setCurrentImg((prev) => prev + 1)
-            }
-        } else {
-            if (currentImg > 0) {
-                setCurrentImg((prev) => prev - 1)
-            }
-        }
-    }
-
-    function handleImgClick(e) {
-        // For video elements, the id might be on the video tag itself
-        setCurrentImg(Number(e.target.id))
-    }
-
-    function handlePrevScroll() {
-        setScrollIndex(Math.max(0, scrollIndex - 1))
-    }
-
-    function handleNextScroll() {
-        setScrollIndex(Math.min(imgs.length - visibleThumbnails, scrollIndex + 1))
-    }
-
-    const isVideo = (url) => url.toLowerCase().endsWith('.mp4');
-
-    let imgsContainer = [];
-    for (let i = scrollIndex; i < Math.min(scrollIndex + visibleThumbnails, imgs.length); i++) {
-        const url = imgs[i];
-        const isVid = isVideo(url);
-
-        imgsContainer.push(
-            isVid ? (
-                <video
-                    onClick={handleImgClick}
-                    key={i}
-                    id={i}
-                    src={url}
-                    className={`cursor-pointer object-cover rounded-xl w-32 h-18 bg-black ${currentImg == i ? "border-4 border-brand grayscale-0" : "grayscale-75 hover:grayscale-50"}`}
-                    style={{ transform: "translateZ(20px)" }}
-                    muted
-                />
-            ) : (
-                <Image
-                    onClick={handleImgClick}
-                    key={i}
-                    id={i}
-                    width={1920}
-                    height={1080}
-                    src={url}
-                    alt={"test"}
-                    className={`cursor-pointer object-contain rounded-xl w-32 h-18  ${currentImg == i ? "border-4 border-brand grayscale-0" : "grayscale-75 hover:grayscale-50"}`}
-                    style={{ transform: "translateZ(20px)" }}
-                />
-            )
-        )
-    }
-
-    const currentUrl = imgs[currentImg];
-    const currentIsVideo = isVideo(currentUrl);
-
-    return (
-        // ! Main Component
-        <div className=" overflow-y-auto w-screen h-screen fixed flex lg:justify-center lg:items-center  bg-[rgba(0,0,0,0.6)] top-0 left-0 z-50 text-white">
-            {
-                !imgExpand &&
-                <div
-                    className="flex h-fit flex-col items-center lg:h-[90%] lg:w-[90%] w-[95%] bg-brand-dark relative rounded-md lg:px-12 px-5 border-2 border-brand">
-                    <button
-                        className=" cursor-pointer absolute top-4 right-4 text-4xl lg:text-6xl"
-                        onClick={handleShow}>
-                        <FaXingSquare />
-                    </button>
-                    <div className="w-full max-h-[30%]">
-                        <h1 className="lg:mt-12 mt-10 lg:mb-16 mb-4 p-4 lg:mr-12 lg:text-4xl text-base font-black text-brand-white bg-brand-semi-dark rounded-2xl w-fit ">{title}</h1>
-                    </div>
-                    <div className="flex w-full lg:flex-row flex-col   lg:justify-between lg:items-start items-center lg:gap-12 gap-3 lg:h-[70%] pb-8">
-                        {/* left container */}
-                        <div className="lg:w-7/12 flex flex-col justify-between lg:h-full  ">
-                            {currentIsVideo ? (
-                                <video
-                                    onClick={() => setImgExpand((prev) => !prev)}
-                                    src={currentUrl}
-                                    className="cursor-pointer w-full max-h-[70%] object-contain rounded-2xl bg-black"
-                                    style={{ transform: "translateZ(20px)" }}
-                                    controls
-                                    autoPlay
-                                    muted
-                                />
-                            ) : (
-                                <Image
-                                    onClick={() => setImgExpand((prev) => !prev)}
-                                    width={1920}
-                                    height={1080}
-                                    src={currentUrl}
-                                    alt={"test"}
-                                    className=" cursor-pointer w-full max-h-[70%] object-contain rounded-2xl  "
-                                    style={{ transform: "translateZ(20px)" }}
-
-                                />
-                            )}
-                            <div className="flex  gap-4 py-4 mt-4 relative ">
-                                <button
-                                    onClick={handlePrevScroll}
-                                    disabled={scrollIndex === 0}
-                                    className="absolute cursor-pointer z-50 left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
-                                    <FaArrowAltCircleLeft />
-                                </button>
-                                <div className="flex w-full gap-4 px-24 overflow-hidden justify-center items-center ">
-                                    {imgsContainer}
-                                </div>
-                                <button
-                                    onClick={handleNextScroll}
-                                    disabled={scrollIndex >= imgs.length - visibleThumbnails}
-                                    className="absolute cursor-pointer z-50 right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-brand text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-2xl font-bold">
-                                    <FaArrowAltCircleRight />
-                                </button>
-                            </div>
-                        </div>
-                        {/* right container */}
-                        <div className="lg:w-5/12 lg:max-h-fit max-h-54  overflow-hidden  text-sm flex flex-col h-full w-full ">
-                            <p className="lg:max-h-[90%] max-h-[35%] lg:w-auto min-w-full overflow-y-scroll overflow-x-hidden custom-scrollbar">
-                                {para}
-                            </p>
-                            <a
-                                target="_blank"
-                                href={github}
-                                className="text-4xl hover:text-brand w-full flex justify-end lg:mt-auto ">
-                                <FaGithub />
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-            }
-            {/*  */}
-            {
-                imgExpand &&
-                <div className=" absolute gap-1  flex  items-center justify-center lg:h-[90%] w-[90%] bg-brand-dark border-2 border-brand  rounded-md px-12 ">
-
-                    <button onClick={() => setImgExpand((prev) => !prev)} className=" absolute text-6xl top-6 right-6 cursor-pointer">
-                        <FaXingSquare />
-                    </button>
-                    <button className="text-5xl text-brand rounded-xl ml-4 p-2 cursor-pointer" onClick={() => { handleBigImgButton(1) }}>
-                        <FaArrowAltCircleLeft />
-                    </button>
-                    {currentIsVideo ? (
-                        <video
-                            src={currentUrl}
-                            className="w-full max-h-[90%] object-contain rounded-2xl bg-black p-4"
-                            style={{ transform: "translateZ(20px)" }}
-                            controls
-                            autoPlay
-                        />
-                    ) : (
-                        <Image
-                            width={1920}
-                            height={1080}
-                            src={currentUrl}
-                            alt={"test"}
-                            className=" w-full max-h-[90%] object-contain rounded-2xl  "
-                            style={{ transform: "translateZ(20px)" }}
-                        />
-                    )}
-                    <button className="text-5xl text-brand rounded-xl p-2 cursor-pointer mr-4" onClick={() => { handleBigImgButton(0) }}>
-                        <FaArrowAltCircleRight />
-                    </button>
-                </div>
-            }
-
-        </div>
-    )
+// The write-ups are stored as one block where sentences run together ("analysis.The model"),
+// so break them back into readable paragraphs.
+function toParagraphs(text = "") {
+    return text
+        .split(/(?<=[.:])(?=[A-Z])/)
+        .map((s) => s.trim())
+        .filter(Boolean);
 }
 
-export default ProjectPopup
+function ProjectPopup({ project, onClose }) {
+    const { imgs } = project;
+    const [current, setCurrent] = useState(0);
+    const closeRef = useRef(null);
+    const thumbsRef = useRef(null);
+
+    const next = () => setCurrent((i) => (i + 1) % imgs.length);
+    const prev = () => setCurrent((i) => (i - 1 + imgs.length) % imgs.length);
+
+    useEffect(() => {
+        const previous = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+        closeRef.current?.focus();
+        const onKey = (e) => {
+            if (e.key === "Escape") onClose();
+            if (e.key === "ArrowRight") setCurrent((i) => (i + 1) % imgs.length);
+            if (e.key === "ArrowLeft") setCurrent((i) => (i - 1 + imgs.length) % imgs.length);
+        };
+        window.addEventListener("keydown", onKey);
+        return () => {
+            document.body.style.overflow = previous;
+            window.removeEventListener("keydown", onKey);
+        };
+    }, [imgs.length, onClose]);
+
+    useEffect(() => {
+        thumbsRef.current?.children[current]?.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
+    }, [current]);
+
+    const media = imgs[current];
+
+    return (
+        <motion.div
+            className="fixed inset-0 z-50 flex items-end justify-center bg-[rgba(8,3,12,0.92)] backdrop-blur-sm sm:items-center sm:p-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={onClose}
+        >
+            <motion.div
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="project-dialog-title"
+                onClick={(e) => e.stopPropagation()}
+                initial={{ y: 60, opacity: 0, scale: 0.97 }}
+                animate={{ y: 0, opacity: 1, scale: 1 }}
+                exit={{ y: 40, opacity: 0, scale: 0.97 }}
+                transition={{ duration: 0.5, ease: EASE }}
+                className="flex max-h-[94dvh] w-full max-w-[1200px] flex-col overflow-hidden rounded-t-[28px] border border-brand-line-strong bg-brand-semi-dark shadow-[0_40px_120px_rgba(0,0,0,0.6)] sm:rounded-[28px] lg:h-[860px] lg:max-h-[92dvh] lg:flex-row"
+            >
+                {/* Gallery */}
+                <div className="flex shrink-0 flex-col gap-3 border-b border-brand-line p-3 sm:p-5 lg:w-[58%] lg:border-r lg:border-b-0 lg:p-7">
+                    <div className="grid-bg relative aspect-video w-full overflow-hidden rounded-2xl border border-brand-line bg-black lg:aspect-auto lg:flex-1">
+                        {isVideo(media) ? (
+                            <video key={media} src={media} className="absolute inset-0 h-full w-full object-contain" controls autoPlay muted loop playsInline />
+                        ) : (
+                            <Image key={media} src={media} alt={`${project.shortTitle} — screenshot ${current + 1}`} fill sizes="(max-width: 1024px) 100vw, 700px" className="object-contain" />
+                        )}
+                        <span className="absolute top-3 right-3 rounded-lg bg-brand-dark/85 px-2.5 py-1.5 font-mono text-xs">
+                            {current + 1} / {imgs.length}
+                        </span>
+                        {imgs.length > 1 && (
+                            <>
+                                <button type="button" onClick={prev} aria-label="Previous image" className="absolute top-1/2 left-3 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-[#3a2756] bg-brand-dark/85 text-lg hover:border-brand">
+                                    <FiChevronLeft aria-hidden="true" />
+                                </button>
+                                <button type="button" onClick={next} aria-label="Next image" className="absolute top-1/2 right-3 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-[#3a2756] bg-brand-dark/85 text-lg hover:border-brand">
+                                    <FiChevronRight aria-hidden="true" />
+                                </button>
+                            </>
+                        )}
+                    </div>
+                    <div ref={thumbsRef} className="flex gap-2.5 overflow-x-auto pb-1">
+                        {imgs.map((url, i) => (
+                            <button
+                                key={url}
+                                type="button"
+                                onClick={() => setCurrent(i)}
+                                aria-label={`Show item ${i + 1}`}
+                                aria-current={i === current}
+                                className={`relative aspect-[16/10] w-20 shrink-0 cursor-pointer overflow-hidden rounded-[10px] border-2 bg-[#170e22] transition sm:w-24 ${i === current ? "border-brand" : "border-brand-line opacity-60 hover:opacity-100"}`}
+                            >
+                                {isVideo(url) ? (
+                                    <span className="flex h-full w-full items-center justify-center text-brand-soft">
+                                        <FiPlay aria-hidden="true" className="fill-current" />
+                                    </span>
+                                ) : (
+                                    <Image src={url} alt="" fill sizes="96px" className="object-cover" />
+                                )}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Details */}
+                <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+                    <div className="flex items-start justify-between gap-4 border-b border-brand-line p-5 sm:px-7 sm:pt-7">
+                        <div className="flex flex-col gap-2.5">
+                            <span className="font-mono text-xs tracking-wide text-brand-soft uppercase">
+                                {String(project.id).padStart(2, "0")} · {project.category}
+                            </span>
+                            <h2 id="project-dialog-title" className="m-0 text-xl leading-tight font-extrabold tracking-tight sm:text-[26px]">
+                                {project.shortTitle}
+                            </h2>
+                            <div className="flex flex-wrap gap-1.5">
+                                {project.tools.map((tool) => (
+                                    <span key={tool} className="rounded-lg border border-brand-line-strong bg-brand-raised px-2.5 py-1 font-mono text-xs text-[#d9d0e6]">
+                                        {tool}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <button
+                            ref={closeRef}
+                            type="button"
+                            onClick={onClose}
+                            aria-label="Close"
+                            className="btn-ghost flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-xl text-lg"
+                        >
+                            <FiX aria-hidden="true" />
+                        </button>
+                    </div>
+
+                    <div className="custom-scrollbar flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto p-5 sm:px-7 sm:py-6">
+                        {toParagraphs(project.subPara).map((paragraph, i) => (
+                            <p key={i} className="m-0 text-[15px] leading-relaxed text-[#d9d0e6]">
+                                {paragraph}
+                            </p>
+                        ))}
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 border-t border-brand-line p-4 sm:px-7 sm:py-[18px]">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2.5 rounded-xl px-5 py-[13px] text-[15px] font-semibold">
+                            <FiGithub aria-hidden="true" />
+                            View on GitHub
+                        </a>
+                        <button type="button" onClick={onClose} className="btn-ghost cursor-pointer rounded-xl px-5 py-[13px] text-[15px] font-semibold">
+                            Back to projects
+                        </button>
+                    </div>
+                </div>
+            </motion.div>
+        </motion.div>
+    );
+}
+
+export default ProjectPopup;

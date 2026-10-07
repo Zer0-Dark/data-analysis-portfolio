@@ -1,155 +1,101 @@
 'use client';
-import React, { useRef, useState } from "react";
-import {
-    motion,
-    useMotionTemplate,
-    useMotionValue,
-    useSpring,
-} from "motion/react";
+import { useRef } from "react";
 import Image from "next/image";
-import ProjectPopup from "./ProjectPopup";
-import { FaGithub } from "react-icons/fa";
-const ROTATION_RANGE = 8;
-const HALF_ROTATION_RANGE = 8 / 2;
+import { FiArrowRight, FiGithub, FiPlay } from "react-icons/fi";
 
+const isVideo = (url) => url.toLowerCase().endsWith(".mp4");
 
+function Project({ project, onOpen }) {
+    const videoRef = useRef(null);
+    const video = project.imgs.find(isVideo);
+    const poster = project.imgs.find((url) => !isVideo(url));
+    const num = String(project.id).padStart(2, "0");
 
-function Project({ title, para, imgs, github, insidePara, code }) {
-
-
-    const handleMouseMove = (e) => {
-        if (!ref.current) return [0, 0];
-
-        const rect = ref.current.getBoundingClientRect();
-
-        const width = rect.width;
-        const height = rect.height;
-
-        const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
-        const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
-
-        const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
-        const rY = mouseX / width - HALF_ROTATION_RANGE;
-
-        x.set(rX);
-        y.set(rY);
-    };
-
-    const handleMouseLeave = () => {
-        x.set(0);
-        y.set(0);
-    };
-
-    const ref = useRef(null);
-    const containerRef = useRef(null);
-
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
-
-    const xSpring = useSpring(x);
-    const ySpring = useSpring(y);
-
-    const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
-
-
-
-    const [showMoreInfo, setShowMoreInfo] = useState(false);
-
-    function handleShow() {
-        setShowMoreInfo((value) => !value)
+    function playPreview() {
+        const el = videoRef.current;
+        if (!el || !window.matchMedia("(hover: hover)").matches) return;
+        el.play().catch(() => { });
     }
 
-
-
+    function stopPreview() {
+        const el = videoRef.current;
+        if (!el) return;
+        el.pause();
+    }
 
     return (
-        <>
-
-            <div
-                ref={containerRef}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                className="lg:w-[calc(50%_-_15px)]  lg:p-4 cursor-pointer"
-                style={{ perspective: "2000px" }}
-                onClick={handleShow}
+        <article
+            onMouseEnter={playPreview}
+            onMouseLeave={stopPreview}
+            className="card-lift group flex h-full flex-col overflow-hidden rounded-[20px] border border-brand-line bg-brand-semi-dark"
+        >
+            <button
+                type="button"
+                onClick={onOpen}
+                aria-label={`Open ${project.shortTitle} case study`}
+                className="grid-bg relative block aspect-video w-full cursor-pointer overflow-hidden border-b border-brand-line bg-[#170e22]"
             >
-                <motion.div
-                    ref={ref}
-                    style={{
-                        transformStyle: "preserve-3d",
-                        transform,
-                    }}
-                    className="bg-brand-semi-dark rounded-xl lg:p-6 p-2 text-white border-1 border-purple-950"
-                >
-                    <div
-                        style={{
-                            transform: "translateZ(30px)",
-                            transformStyle: "preserve-3d",
-                        }}
-                        className="p-4"
+                {poster && (
+                    <Image
+                        src={poster}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                        className="media-zoom object-cover"
+                    />
+                )}
+                {video && (
+                    <video
+                        ref={videoRef}
+                        src={video}
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                        className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    />
+                )}
+                <span className="absolute top-3.5 left-3.5 rounded-md bg-brand-dark/80 px-2 py-1 font-mono text-xs text-brand-soft">{num}</span>
+                {video && (
+                    <span className="play-badge absolute inset-0 m-auto flex h-[52px] w-[52px] items-center justify-center rounded-full bg-brand text-white shadow-[0_10px_30px_rgba(135,80,247,0.45)]">
+                        <FiPlay aria-hidden="true" className="ml-0.5 fill-current" />
+                    </span>
+                )}
+            </button>
+
+            <div className="flex flex-1 flex-col gap-3 p-5 sm:p-[22px]">
+                <span className="font-mono text-xs tracking-wide text-brand-soft uppercase">{project.category}</span>
+                <h3 className="m-0 text-xl leading-snug font-bold">{project.shortTitle}</h3>
+                <p className="m-0 flex-1 text-[15px] leading-relaxed text-brand-muted">{project.summary}</p>
+                <div className="flex flex-wrap gap-1.5">
+                    {project.tools.map((tool) => (
+                        <span key={tool} className="rounded-lg border border-brand-line-strong bg-brand-raised px-2.5 py-1 font-mono text-xs text-[#d9d0e6]">
+                            {tool}
+                        </span>
+                    ))}
+                </div>
+                <div className="mt-1 flex items-center justify-between gap-3 border-t border-brand-line pt-3.5">
+                    <button
+                        type="button"
+                        onClick={onOpen}
+                        className="inline-flex min-h-11 cursor-pointer items-center gap-2 text-[15px] font-semibold text-brand-soft hover:text-white"
                     >
-                        {imgs[0].toLowerCase().endsWith('.mp4') ? (
-                            <video
-                                src={imgs[0]}
-                                className="w-full max-h-96 h-fit object-contain rounded lg:mb-12 mb-10 bg-black"
-                                style={{ transform: "translateZ(20px)" }}
-                                muted
-                                autoPlay
-                                loop
-                                playsInline
-                            />
-                        ) : (
-                            <Image
-                                width={1920}
-                                height={1080}
-                                src={imgs[0]}
-                                alt={title}
-                                className="w-full max-h-96  h-fit  object-contain rounded lg:mb-12 mb-10 "
-                                style={{ transform: "translateZ(20px)" }}
-                            />
-                        )}
-                        <h1
-                            className="lg:text-3xl text-xl capitalize font-bold mb-2 text-brand"
-                            style={{ transform: "translateZ(40px)" }}
-                        >
-                            {title}
-                        </h1>
-                        <p
-                            className="text-white mb-4 lg:text-base text-sm"
-                            style={{ transform: "translateZ(30px)" }}
-                        >
-                            {para}
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <button
-                                className="px-4 py-2 lg:text-xl bg-brand text-brand-dark font-bold hover:text-white rounded border-2 border-transparent hover:bg-brand-dark hover:border-brand cursor-pointer z-30"
-                                style={{ transform: "translateZ(50px)" }}
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    setShowMoreInfo((value) => !value);
-                                }}
-                            >
-                                See more
-                            </button>
-
-                            <a
-                                target="_blank"
-                                href={github}
-                                className="text-4xl hover:text-brand">
-                                <FaGithub />
-                            </a>
-                        </div>
-
-
-
-                    </div>
-                </motion.div>
+                        View case study
+                        <FiArrowRight className="arrow" aria-hidden="true" />
+                    </button>
+                    <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${project.shortTitle} on GitHub`}
+                        className="btn-ghost flex h-11 w-11 items-center justify-center rounded-xl text-xl"
+                    >
+                        <FiGithub aria-hidden="true" />
+                    </a>
+                </div>
             </div>
-            {showMoreInfo &&
-                <ProjectPopup handleShow={handleShow} title={title} para={insidePara} imgs={imgs} github={github} code={code} />
-            }
-        </>
-    )
+        </article>
+    );
 }
 
-export default Project
+export default Project;

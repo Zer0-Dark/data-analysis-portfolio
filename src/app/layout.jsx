@@ -13,18 +13,16 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Mahmoud El-Zayat",
-  description: "Portfolio",
+  description: "Mahmoud El-Zayat — Data Analyst. Power BI, SQL, Python and Excel dashboards for retail, real estate, automotive and more.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-brand-dark ">
+    <html lang="en" className="bg-brand-dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
-        <script src="three.r134.min.js"></script>
-        <script src="vanta.globe.min.js"></script>
       </body>
 
     </html>

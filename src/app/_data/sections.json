@@ -1,11 +1,22 @@
 {
     "hero": {
-        "name": "Mahmoud el-zayat",
+        "name": "Mahmoud El-Zayat",
         "role": "Data Analyst",
         "description": "Detail-oriented Data Analyst with extensive hands-on experience delivering data-driven insights for government, real estate, automotive, retail, and marketing sectors across the Middle East and Europe. Proven track record of contributing to high-impact projects for organizations such as Abdul Latif Jameel Automotive, Abdul Samad Al Qurashi, and large-scale real estate market studies in Saudi Arabia.Highly skilled in Python, SQL, Power BI, Excel, and Tableau, with a strong academic background in business and accounting. Experienced in transforming complex datasets into actionable insights that support strategic decision-making in sales, finance, marketing, and commercial operations. Recognized for strong analytical thinking, problem-solving abilities, effective communication, and seamless collaboration with cross-functional and international teams.",
         "cvLink": "/cvv.pdf",
         "heroImage": "/tt.png",
-        "subDescription": []
+        "subDescription": [],
+        "headline": [
+            "Turning complex",
+            "data into"
+        ],
+        "headlineAccent": "decisions.",
+        "intro": "I'm Mahmoud El-Zayat, a detail-oriented data analyst delivering insights for government, real estate, automotive, retail and marketing teams — including work for Abdul Latif Jameel Automotive and Abdul Samad Al Qurashi.",
+        "tags": [
+            "Power BI",
+            "SQL",
+            "Python"
+        ]
     },
     "skills": {
         "title": "My Skills",
@@ -15,7 +26,7 @@
                 "icon": "/excel.png"
             },
             {
-                "name": "Power Bi",
+                "name": "Power BI",
                 "icon": "/power_bi.svg"
             },
             {
@@ -30,18 +41,70 @@
                 "name": "SQL",
                 "icon": "/sql.png"
             }
-        ]
+        ],
+        "eyebrow": "01 — Toolkit",
+        "intro": "The tools I use every day to clean, model and visualise data."
     },
     "projects": {
         "title": "Projects",
-        "intro": "We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers."
+        "intro": "Interactive Power BI dashboards — from raw data and ETL to data models, DAX and storytelling.",
+        "eyebrow": "02 — Selected work"
     },
     "certificates": {
         "title": "Certificates",
-        "intro": "Selected professional certificates and training."
+        "intro": "Selected professional certificates and training.",
+        "eyebrow": "03 — Credentials"
     },
     "contact": {
         "title": "Contact Me",
-        "intro": "Get in touch via phone, email, or social networks."
+        "intro": "Get in touch via phone, email, or social networks.",
+        "eyebrow": "04 — Contact",
+        "headline": "Have data that needs a story?",
+        "headlineAccent": "Let's talk."
+    },
+    "stats": [
+        {
+            "value": 20,
+            "label": "end-to-end dashboard projects"
+        },
+        {
+            "value": 22,
+            "label": "certificates & programs"
+        },
+        {
+            "value": 5,
+            "label": "industries covered"
+        },
+        {
+            "text": "KSA",
+            "label": "based · working across MENA & Europe"
+        }
+    ],
+    "marquee": {
+        "tools": [
+            "Power BI",
+            "DAX",
+            "Power Query",
+            "SQL",
+            "Python",
+            "Excel",
+            "Tableau"
+        ],
+        "industries": [
+            "Retail",
+            "Real Estate",
+            "Automotive",
+            "Government",
+            "Hospitality",
+            "Healthcare",
+            "Supply Chain",
+            "HR Analytics"
+        ]
+    },
+    "footer": {
+        "creditLabel": "Designed & developed by",
+        "creditName": "Metia Logic",
+        "creditLink": "https://metia-logic.robotoz.online/en",
+        "wordmark": "EL-ZAYAT"
     }
 }

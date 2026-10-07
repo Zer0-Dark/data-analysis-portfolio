@@ -9,7 +9,7 @@
     "id": 2,
     "icon": "email",
     "label": "mahmoudelzeiat7@gmail.com",
-    "href": "mahmoudelzeiat7@gmail.com"
+    "href": "mailto:mahmoudelzeiat7@gmail.com"
   },
   {
     "id": 3,
@@ -30,4 +30,3 @@
     "href": "https://github.com/M-Elzayat"
   }
 ]
-
