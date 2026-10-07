@@ -1,5 +1,23 @@
 [
     {
+        "id": 22,
+        "title": "SAPAC Human Resources Analytics — Company-Wide Executive HR Dashboard",
+        "shortTitle": "SAPAC Company-Wide HR Analytics",
+        "category": "People & HR",
+        "summary": "An Arabic executive HR platform covering 8,494 employees across every SAPAC project: hiring, leavers, turnover, Saudization and labour mix.",
+        "tools": [
+            "Power BI",
+            "DAX"
+        ],
+        "para": "A company-wide, Arabic right-to-left HR analytics platform for SAPAC (Pan Kingdom) that tracks the workforce, employee movement, payroll, recruitment, turnover, compliance and medical insurance, turning HR operational data into indicators that support decision-making.",
+        "github": "https://github.com/M-Elzayat",
+        "subPara": "A company-wide Power BI platform built in Arabic with a right-to-left layout for SAPAC (Pan Kingdom), covering a workforce of 8,494 employees across all of the company's projects.\nIntro page: report status, type and last update, a live ticker of headcount by project, and quick navigation to eight sections: Executive Summary, Workforce Analysis, Recruitment, Visas & Labour Supply, Employee Turnover & Retention, Payroll & Compensation, Employee Movement & HR Operations, Compliance & Insurance, and Medical Insurance.\nExecutive Summary: year-to-date KPIs for total workforce (8,494), active employees (8,019), Saudization (8.8%), outsourced labour (1,410), new hires (1,055), leavers (1,259) and turnover rate (14.65%).\nLeaving reasons compared year on year against average length of service, a 12-month trend of workforce size with monthly hires and leavers, the top projects by workforce with drill-down, and the workforce split by sponsor type.\nShared filters for region, department, sponsor and project, plus a built-in executive assistant panel, keep every page interactive.",
+        "imgs": [
+            "/projects/sapac-hr/01-intro.jpg",
+            "/projects/sapac-hr/02-executive-summary.jpg"
+        ]
+    },
+    {
         "id": 21,
         "title": "Southern Second Ring Road (Riyadh) — Workforce & HR Analytics for SAPAC",
         "shortTitle": "Southern Ring Road Workforce Analytics — SAPAC",
